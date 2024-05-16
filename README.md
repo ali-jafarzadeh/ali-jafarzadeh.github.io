@@ -1,11 +1,11 @@
 # Finance PhD Student
 
-##Education
+## Education
 Finace PhD at Leeds
 MSC Economics
 BSC Engineering at University of Tehran
 
 
-##Projects
+## Projects
 
 SOmehting
