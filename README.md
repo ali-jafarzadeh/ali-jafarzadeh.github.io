@@ -2,7 +2,7 @@
 
 ## Education
 - Ph.D., Finance | Univesity of Colorado Boulder (_May 2028_)
-- M.S., Economics | Tarbiat Modares Univesity, Tehran (_May 2023_)
+- M.S., Economics | Tarbiat Modares University, Tehran (_May 2023_)
 - B.S., Engineering |  University of Tehran (_Feb 2019_)
 
 
