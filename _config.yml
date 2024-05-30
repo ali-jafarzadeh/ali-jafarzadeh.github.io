@@ -4,4 +4,5 @@ description:  Leeds School of Business (CU Boulder)
 #show_downloads: true
 theme: jekyll-theme-minimal
 
+include: [custom.css]
 
