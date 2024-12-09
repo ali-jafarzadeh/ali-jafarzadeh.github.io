@@ -3,7 +3,8 @@
 Welcome to my professional portfolio! I am a PhD student in Finance at the University of Colorado Boulder with a focus on empirical research and machine learning applications in finance.
 
 ## Education
-- **Ph.D.** Finance | University of Colorado Boulder (_Expected May 2028_)
+- **Ph.D.** Finance | University of Colorado Boulder (_Expected May 2028_)  
+  [University Page](https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh)
 - **M.S.** Economics | Tarbiat Modares University, Tehran (_May 2023_)
 - **B.S.** Engineering | University of Tehran (_Feb 2019_)
 
