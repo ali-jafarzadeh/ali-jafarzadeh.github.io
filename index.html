@@ -6,27 +6,131 @@
   <title>Ali Jafarzadeh</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/custom.css' | relative_url }}">
+  <style>
+    body {
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .main-container {
+      background-color: #eaeaea;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      background: url('/assets/img/background-image.jpg') center/cover no-repeat;
+      padding: 50px 20px;
+      border-radius: 15px;
+      color: white;
+      position: relative;
+    }
+
+    .header-info {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #333;
+    }
+
+    .header-info h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .header-info h2, .header-info h3 {
+      margin: 5px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #333;
+      padding: 10px 0;
+      border-radius: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .content > div {
+      border-radius: 15px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .content .main-content {
+      flex: 2;
+    }
+
+    .content .sidebar {
+      flex: 1;
+      text-align: center;
+    }
+
+    .profile-image {
+      border-radius: 15px;
+      max-width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-  <header style="background: url('/assets/img/background-image.jpg') center/cover no-repeat; color: white; padding: 50px 20px;">
-    <h1>Ali Jafarzadeh</h1>
-    <h2>Finance PhD Student</h2>
-    <h3>Leeds School of Business</h3>
-  </header>
+  <div class="main-container">
+    <header>
+      <div class="header-info">
+        <h1>Ali Jafarzadeh</h1>
+        <h2>Finance PhD Student</h2>
+        <h3>Leeds School of Business</h3>
+      </div>
+    </header>
 
-  <nav>
-    <a href="/index.html">Home</a>
-    <a href="/about.html">About Me</a>
-    <a href="/projects.html">Projects</a>
-    <a href="/datasets.html">Datasets</a>
-    <a href="/cv.html">CV</a>
-    <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
-  </nav>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About Me</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/datasets.html">Datasets</a>
+      <a href="/cv.html">CV</a>
+      <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
+    </nav>
 
-  <div class="container">
-    <div style="display: flex; gap: 20px; align-items: flex-start;">
+    <div class="content">
       <!-- Main Content -->
-      <div style="flex: 2;">
+      <div class="main-content">
         <p>
           Ali Jafarzadeh is a PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. His research interests span corporate finance, private equity, fintech, and cryptocurrency markets. Combining machine learning with financial econometrics, Ali explores innovative solutions to real-world financial problems.
         </p>
@@ -39,8 +143,8 @@
       </div>
 
       <!-- Sidebar -->
-      <div style="flex: 1;">
-        <img src="/assets/img/ali.jpeg" alt="Ali Jafarzadeh" class="profile-image" style="width: 100%; border-radius: 10px;">
+      <div class="sidebar">
+        <img src="/assets/img/ali.jpeg" alt="Ali Jafarzadeh" class="profile-image">
         <h3>Contact</h3>
         <p>
           University of Colorado<br>
@@ -52,10 +156,10 @@
         </p>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} Ali Jafarzadeh</p>
-  </footer>
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} Ali Jafarzadeh</p>
+    </footer>
+  </div>
 </body>
 </html>
