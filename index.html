@@ -23,6 +23,29 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #333;
+      padding: 10px 0;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
     header {
       background: url('/assets/img/background-image.jpg') center/cover no-repeat;
       padding: 50px 20px;
@@ -49,28 +72,6 @@
 
     .header-info h2, .header-info h3 {
       margin: 5px 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background-color: #333;
-      padding: 10px 0;
-      border-radius: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: #555;
     }
 
     .content {
@@ -111,14 +112,6 @@
 </head>
 <body>
   <div class="main-container">
-    <header>
-      <div class="header-info">
-        <h1>Ali Jafarzadeh</h1>
-        <h2>Finance PhD Student</h2>
-        <h3>Leeds School of Business</h3>
-      </div>
-    </header>
-
     <nav>
       <a href="/index.html">Home</a>
       <a href="/about.html">About Me</a>
@@ -127,6 +120,14 @@
       <a href="/cv.html">CV</a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
+
+    <header>
+      <div class="header-info">
+        <h1>Ali Jafarzadeh</h1>
+        <h2>Finance PhD Student</h2>
+        <h3>Leeds School of Business</h3>
+      </div>
+    </header>
 
     <div class="content">
       <!-- Main Content -->
