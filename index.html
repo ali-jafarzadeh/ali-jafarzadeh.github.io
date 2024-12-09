@@ -49,13 +49,15 @@
 
     header {
       background: url('/assets/img/background-image.jpg') center/cover no-repeat;
-      height: 300px;
+      height: 400px;
       border-radius: 15px;
       color: white;
       position: relative;
     }
 
     .header-info {
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Makes text more readable over the background */
       background: rgba(255, 255, 255, 0.8);
       border-radius: 15px;
       padding: 15px;
@@ -67,7 +69,7 @@
     }
 
     .header-info h1 {
-      font-size: 1.8em;
+      font-size: 1.6em;
       margin: 0;
     }
 
@@ -116,9 +118,8 @@
   <div class="main-container">
     <nav>
       <a href="/index.html">Home</a>
-      <a href="/about.html">About Me</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/datasets.html">Datasets</a>
+      <a href="/projects.html">Research</a>
+      <a href="/datasets.html">Data</a>
       <a href="/cv.html">CV</a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
@@ -154,14 +155,14 @@
           University of Colorado<br>
           Leeds School of Business<br>
           Boulder, CO 80309<br>
-          Phone: 720 999 999<br>
+          Phone: 7209785834<br>
           <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a>
         </p>
       </div>
     </div>
 
     <footer>
-      <p>&copy; {{ site.time | date: "%Y" }} Ali Jafarzadeh</p>
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh</p>
     </footer>
   </div>
 </body>
