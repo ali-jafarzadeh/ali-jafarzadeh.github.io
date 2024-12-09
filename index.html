@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="{{ '/custom.css' | relative_url }}">
 </head>
 <body>
+  <header style="background: url('/assets/img/background-image.jpg') center/cover no-repeat; color: white; padding: 50px 20px;">
+    <h1>Ali Jafarzadeh</h1>
+    <h2>Finance PhD Student</h2>
+    <h3>Leeds School of Business</h3>
+  </header>
+
   <nav>
     <a href="/index.html">Home</a>
     <a href="/about.html">About Me</a>
@@ -16,42 +22,40 @@
     <a href="/cv.html">CV</a>
     <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
   </nav>
-  <div class="container">
-    <h1>Ali Jafarzadeh</h1>
-    <img src="/assets/img/ali.jpeg" alt="Ali Jafarzadeh" class="profile-image" width="200">
-    <h2>Finance PhD Student</h2>
-    <p>Leeds School of Business (CU Boulder)</p>
-    <a href="https://github.com/your-github-profile" target="_blank">View My GitHub Profile</a>
-    
-    <section class="education">
-      <h2>Education</h2>
-      <ul>
-        <li>Ph.D., Finance | University of Colorado Boulder (<em>May 2028</em>)</li>
-        <li>M.S., Economics | Tarbiat Modares University, Tehran (<em>May 2023</em>)</li>
-        <li>B.S., Engineering | University of Tehran (<em>Feb 2019</em>)</li>
-      </ul>
-    </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>Analyzing Patent Text for Evaluating Market Responses</li>
-        <li>Moody's Document OCR and Textual Analysis</li>
-        <li>Fintech Risk Inclusion Behavior</li>
-        <li>PE and EPU: Studying the effects of economic policy uncertainty on private equity deals</li>
-        <li>Innovation and LBO: Exploring innovation’s role in leveraged buyouts</li>
-        <li>Crypto Comovement: Investigating cryptocurrency price comovements through network analysis</li>
-      </ul>
-    </section>
+  <div class="container">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <!-- Main Content -->
+      <div style="flex: 2;">
+        <p>
+          Ali Jafarzadeh is a PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. His research interests span corporate finance, private equity, fintech, and cryptocurrency markets. Combining machine learning with financial econometrics, Ali explores innovative solutions to real-world financial problems.
+        </p>
+        <p>
+          Before joining CU Boulder, Ali completed his M.S. in Economics at Tarbiat Modares University and a B.S. in Engineering at the University of Tehran. His diverse academic background provides a unique perspective on empirical finance research.
+        </p>
+        <p>
+          Ali’s projects include analyzing patent texts to evaluate market responses, investigating risk propagation in cryptocurrency networks, and studying the impacts of economic policy uncertainty on private equity deals. His work aims to bridge the gap between data science and financial decision-making.
+        </p>
+      </div>
+
+      <!-- Sidebar -->
+      <div style="flex: 1;">
+        <img src="/assets/img/ali.jpeg" alt="Ali Jafarzadeh" class="profile-image" style="width: 100%; border-radius: 10px;">
+        <h3>Contact</h3>
+        <p>
+          University of Colorado<br>
+          Leeds School of Business<br>
+          Campus Box 419<br>
+          Boulder, CO 80309<br>
+          Email: ali.jafarzadeh@colorado.edu<br>
+          <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
+        </p>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <p>Contact: ali.jafarzadeh@colorado.edu</p>
-    <p>
-      <a href="https://github.com/your-github-profile" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> | 
-      <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
-    </p>
+    <p>&copy; {{ site.time | date: "%Y" }} Ali Jafarzadeh</p>
   </footer>
 </body>
 </html>
