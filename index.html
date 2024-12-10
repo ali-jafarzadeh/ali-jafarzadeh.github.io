@@ -114,6 +114,15 @@
       margin-top: 20px;
       border-top: 1px solid #ccc;
     }
+    <style>
+  /* Remove any pseudo-elements in Chrome */
+  nav a[href$="cv.pdf"]::before,
+  nav a[href$="cv.pdf"]::after {
+    content: none !important; /* Prevent icons from appearing */
+    display: none !important; /* Ensure they're hidden */
+  }
+</style>
+
   </style>
 </head>
 <body>
@@ -122,9 +131,10 @@
       <a href="/index.html">About Me</a>
       <a href="/research.html">Research</a>
       <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer" style="all: unset; display: inline; font-weight: bold; color: black; padding: 5px 15px;">CV</a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
+
 
     <header>
       <div class="header-info">
