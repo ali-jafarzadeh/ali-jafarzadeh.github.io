@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
+/* General Styling */
 body {
   font-family: 'EB Garamond', serif;
   line-height: 1.6;
@@ -35,24 +36,28 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Resize Contact and Information Boxes */
+/* Flexbox Layout for Content */
 .content {
-  display: flex;
-  gap: 20px; /* Space between boxes */
+  display: flex; /* Enable Flexbox layout */
+  gap: 20px; /* Space between the boxes */
+  align-items: flex-start; /* Align the boxes at the top */
+  margin-top: 20px;
 }
 
+/* Main Content Box */
 .main-content {
-  flex: 2; /* Larger width for information box */
-  height: 300px; /* Fixed height */
+  flex: 2; /* Larger width for main content */
+  height: 300px; /* Fixed height to match sidebar */
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Sidebar Box */
 .sidebar {
   flex: 1; /* Smaller width for contact box */
-  height: 300px; /* Same height as information box */
+  height: 300px; /* Same height as main content */
   background-color: #fff;
   border-radius: 15px;
   text-align: center;
@@ -60,12 +65,7 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Remove Icon for CV Link */
-nav a[href$="cv.pdf"]::before {
-  content: none !important;
-}
-
-/* Centered container for page content */
+/* Centered Container for Page Content */
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -82,6 +82,12 @@ nav a[href$="cv.pdf"]::before {
   margin-right: auto;
 }
 
+/* Remove Icon for CV Link */
+nav a[href$="cv.pdf"]::before {
+  content: none !important;
+}
+
+/* Education and Projects Section Styling */
 .education, .projects {
   margin-bottom: 30px;
 }
@@ -95,6 +101,7 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* Footer Styling */
 footer {
   margin-top: 50px;
   padding-top: 20px;
