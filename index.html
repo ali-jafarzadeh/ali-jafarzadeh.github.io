@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ali Jafarzadeh</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/custom.css' | relative_url }}">
   <style>
     body {
       font-family: 'EB Garamond', serif;
@@ -48,21 +47,21 @@
 
     header {
       background: url('/assets/img/background-image.jpg') center/cover no-repeat;
-      height: 400px; /* Adjust height for full image visibility */
+      height: 400px;
       border-radius: 15px;
       color: white;
       position: relative;
     }
 
     .header-info {
-      background: rgba(50, 50, 50, 0.4); /* Light gray background with slight transparency */
+      background: rgba(50, 50, 50, 0.4);
       border-radius: 15px;
       padding: 15px;
       display: inline-block;
       position: absolute;
-      top: 20px; /* Move to top */
-      left: 20px; /* Move to left */
-      color: white; /* White text */
+      top: 20px;
+      left: 20px;
+      color: white;
     }
 
     .header-info h1 {
@@ -85,24 +84,29 @@
       margin-top: 20px;
     }
 
-    .content > div {
+    .main-content {
+      flex: 2;
+      background-color: white;
       border-radius: 15px;
       padding: 20px;
-      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 300px; /* Ensure height consistency */
     }
 
-    .content .main-content {
-      flex: 2;
-    }
-
-    .content .sidebar {
+    .sidebar {
       flex: 1;
+      background-color: white;
+      border-radius: 15px;
       text-align: center;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 300px; /* Match height with main content */
     }
 
     .profile-image {
-      border-radius: 15px;
+      border-radius: 50%;
       width: 150px;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -119,7 +123,9 @@
       <a href="/index.html">About Me</a>
       <a href="/research.html">Research</a>
       <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-pdf"></i> CV
+      </a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
 
@@ -131,21 +137,19 @@
       </div>
     </header>
 
-<div class="content">
-  <!-- Main Content -->
-  <div class="main-content">
-    <p>
-      Ali Jafarzadeh is a PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. His research focuses on empirical corporate finance, private equity, machine learning, and cryptocurrency markets. Ali's work aims to bridge the gap between data science and financial decision-making, contributing innovative insights to the field of finance.
-    </p>
-    <p>
-      Before joining CU Boulder, Ali earned an M.S. in Economics with a minor in Mathematics from Tarbiat Modares University and a B.S. in Mechanical Engineering (specializing in Food Machinery) from the University of Tehran. Alongside his academic pursuits, Ali played competitive volleyball for the University of Tehran during his undergraduate years, showcasing his dedication both on and off the court.
-    </p>
-    <p>
-      Beyond academia, Ali is deeply passionate about Persian music and plays the Ney, the traditional Iranian flute. He enjoys hiking, exploring the outdoors, and spending quality time with family and friends, balancing his professional ambitions with personal enrichment and connection.
-    </p>
-  </div>
-</div>
-
+    <div class="content">
+      <!-- Main Content -->
+      <div class="main-content">
+        <p>
+          Ali Jafarzadeh is a PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. His research focuses on empirical corporate finance, private equity, machine learning, and cryptocurrency markets. Ali's work aims to bridge the gap between data science and financial decision-making, contributing innovative insights to the field of finance.
+        </p>
+        <p>
+          Before joining CU Boulder, Ali earned an M.S. in Economics with a minor in Mathematics from Tarbiat Modares University and a B.S. in Mechanical Engineering (specializing in Food Machinery) from the University of Tehran. Alongside his academic pursuits, Ali played competitive volleyball for the University of Tehran during his undergraduate years, showcasing his dedication both on and off the court.
+        </p>
+        <p>
+          Beyond academia, Ali is deeply passionate about Persian music and plays the Ney, the traditional Iranian flute. He enjoys hiking, exploring the outdoors, and spending quality time with family and friends, balancing his professional ambitions with personal enrichment and connection.
+        </p>
+      </div>
 
       <!-- Sidebar -->
       <div class="sidebar">
@@ -155,7 +159,7 @@
           Room 466, Koelbel Building<br>
           University of Colorado<br>
           Leeds School of Business<br>
-          Boulder, CO 80309<br>
+          Boulder, CO 80309-17<br>
           Phone: 720 978 5834<br>
           <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a>
         </p>
@@ -166,5 +170,8 @@
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh | University of Colorado Boulder | Contact: <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a></p>
     </footer>
   </div>
+
+  <!-- Include Font Awesome for the CV Icon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
