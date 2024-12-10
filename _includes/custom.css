@@ -35,6 +35,37 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Resize Contact and Information Boxes */
+.content {
+  display: flex;
+  gap: 20px; /* Space between boxes */
+}
+
+.main-content {
+  flex: 2; /* Larger width for information box */
+  height: 300px; /* Fixed height */
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  flex: 1; /* Smaller width for contact box */
+  height: 300px; /* Same height as information box */
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove Icon for CV Link */
+nav a[href$="cv.pdf"]::before {
+  content: none !important;
+}
+
+/* Centered container for page content */
 .container {
   max-width: 800px;
   margin: 0 auto;
