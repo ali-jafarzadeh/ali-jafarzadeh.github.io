@@ -5,38 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research - Ali Jafarzadeh</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/custom.css' | relative_url }}">
+  <style>
+    body {
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .main-container {
+      background-color: #eaeaea;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      background-color: #d3d3d3;
+      padding: 5px 20px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #bbb;
+    }
+
+    header {
+      background: url('/assets/img/background-image.jpg') center/cover no-repeat;
+      height: 400px;
+      border-radius: 15px;
+      color: white;
+      position: relative;
+    }
+
+    .header-info {
+      background: rgba(50, 50, 50, 0.4);
+      border-radius: 15px;
+      padding: 15px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+    }
+
+    .header-info h1 {
+      font-size: 1.6em;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .main-content {
+      flex: 2;
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 300px;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: white;
+      border-radius: 15px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-height: 300px;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Main Container -->
   <div class="main-container">
-    <!-- Navigation Bar -->
     <nav>
       <a href="/index.html">About Me</a>
       <a href="/research.html">Research</a>
       <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-pdf"></i> CV
+      </a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
 
-    <!-- Header Section with Background Image -->
     <header>
       <div class="header-info">
-        <h1>Ali Jafarzadeh</h1>
-        <h2>Finance PhD Student</h2>
-        <h3>Leeds School of Business</h3>
+        <h1>Research Projects</h1>
       </div>
     </header>
 
-    <!-- Main Content Section -->
     <div class="content">
-      <!-- Research Details -->
+      <!-- Main Content -->
       <div class="main-content">
-        <h1>Research</h1>
-        <p>
-          My research explores various aspects of finance, including corporate finance, private equity, machine learning applications, and cryptocurrency markets. Below are details of my published work, working papers, and ongoing projects.
-        </p>
-        
         <section>
           <h2>Published Papers</h2>
           <ul>
@@ -62,7 +177,7 @@
         </section>
       </div>
 
-      <!-- Sidebar with Contact Info -->
+      <!-- Sidebar -->
       <div class="sidebar">
         <img src="/assets/img/ali.jpeg" alt="Ali Jafarzadeh" class="profile-image">
         <h3>Contact</h3>
@@ -77,10 +192,12 @@
       </div>
     </div>
 
-    <!-- Footer -->
     <footer>
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh | University of Colorado Boulder | Contact: <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a></p>
     </footer>
   </div>
+
+  <!-- Include Font Awesome for CV Icon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
