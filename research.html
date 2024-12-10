@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research - Ali Jafarzadeh</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <style>
     body {
       font-family: 'EB Garamond', serif;
@@ -129,6 +128,13 @@
     ul li {
       margin-bottom: 10px;
     }
+
+    /* Remove default icon for CV */
+    nav a[href$="cv.pdf"]::before,
+    nav a[href$="cv.pdf"]::after {
+      content: none !important;
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -137,9 +143,7 @@
       <a href="/index.html">About Me</a>
       <a href="/research.html">Research</a>
       <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-file-pdf"></i> CV
-      </a>
+      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
 
@@ -196,8 +200,5 @@
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh | University of Colorado Boulder | Contact: <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a></p>
     </footer>
   </div>
-
-  <!-- Include Font Awesome for CV Icon -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
