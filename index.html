@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ali Jafarzadeh</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <style>
     body {
       font-family: 'EB Garamond', serif;
@@ -47,7 +46,7 @@
 
     header {
       background: url('/assets/img/background-image.jpg') center/cover no-repeat;
-      height: 300px;
+      height: 250px;
       border-radius: 15px;
       color: white;
       position: relative;
@@ -108,10 +107,7 @@
       width: 200px;
       margin-bottom: 10px;
     }
-    nav a[href$="cv.pdf"]::before {
-    content: none !important; /* Completely remove any default icon */
-    display: none; /* Ensure the pseudo-element is hidden */
-    }
+
     footer {
       text-align: center;
       padding: 20px 0;
@@ -171,8 +167,5 @@
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh | University of Colorado Boulder | Contact: <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a></p>
     </footer>
   </div>
-
-  <!-- Include Font Awesome for the CV Icon -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
