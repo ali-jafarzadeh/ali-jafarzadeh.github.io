@@ -108,7 +108,10 @@
       width: 150px;
       margin-bottom: 20px;
     }
-
+    nav a[href$="cv.pdf"]::before {
+    content: none !important; /* Completely remove any default icon */
+    display: none; /* Ensure the pseudo-element is hidden */
+    }
     footer {
       text-align: center;
       padding: 20px 0;
