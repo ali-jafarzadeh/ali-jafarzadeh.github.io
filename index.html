@@ -89,7 +89,7 @@
       border-radius: 15px;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-height: 300px; /* Ensure height consistency */
+      min-height: 300px;
     }
 
     .sidebar {
@@ -99,7 +99,7 @@
       text-align: center;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-height: 300px; /* Match height with main content */
+      min-height: 300px;
     }
 
     .profile-image {
@@ -114,15 +114,52 @@
       margin-top: 20px;
       border-top: 1px solid #ccc;
     }
-    <style>
-  /* Remove any pseudo-elements in Chrome */
-  nav a[href$="cv.pdf"]::before,
-  nav a[href$="cv.pdf"]::after {
-    content: none !important; /* Prevent icons from appearing */
-    display: none !important; /* Ensure they're hidden */
-  }
-</style>
 
+    /* Responsive Design for Mobile Devices */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      nav {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+      }
+
+      nav a {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      header {
+        height: 200px;
+      }
+
+      .header-info {
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      .main-content, .sidebar {
+        width: 100%;
+        min-height: auto;
+      }
+
+      .profile-image {
+        width: 150px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -131,10 +168,9 @@
       <a href="/index.html">About Me</a>
       <a href="/research.html">Research</a>
       <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer" style="all: unset; display: inline; font-weight: bold; color: black; padding: 5px 15px;">CV</a>
+      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">University Page</a>
     </nav>
-
 
     <header>
       <div class="header-info">
