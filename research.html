@@ -29,9 +29,9 @@
     nav {
       display: flex;
       justify-content: flex-start;
-      gap: 20px;
+      gap: 15px;
       background-color: #d3d3d3;
-      padding: 5px 20px;
+      padding: 5px 15px;
       border-radius: 15px;
       font-size: 0.9em;
       margin-bottom: 10px;
@@ -41,7 +41,7 @@
       color: black;
       text-decoration: none;
       font-weight: bold;
-      padding: 5px 15px;
+      padding: 5px 10px;
       border-radius: 10px;
       transition: background-color 0.3s ease;
     }
@@ -60,35 +60,43 @@
 
     .header-info {
       background: rgba(50, 50, 50, 0.4);
-      border-radius: 15px;
-      padding: 15px;
+      border-radius: 10px;
+      padding: 5px;
       display: inline-block;
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 10px;
+      left: 10px;
+      width: auto;
+      max-widt: 90%;
+      box-sizing: border-box;
       color: white;
     }
 
     .header-info h1 {
-      font-size: 1.6em;
+      font-size: 1.5em;
       margin: 0;
       font-weight: normal;
+    }
+    .header-info h2,
+    .header-info h3,
+    .header-info h4 {
+      font-size: 1em;
     }
 
     .content {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       align-items: stretch;
-      margin-top: 20px;
+      margin-top: 15px;
     }
 
     .main-content {
       flex: 2;
       background-color: white;
       border-radius: 15px;
-      padding: 20px;
+      padding: 15px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-height: 300px;
+      min-height: 250px;
     }
 
     .sidebar {
@@ -98,7 +106,7 @@
       text-align: center;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-height: 300px;
+      min-height: 250px;
     }
 
     .profile-image {
@@ -146,7 +154,7 @@
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
       }
 
       header {
@@ -156,6 +164,52 @@
       .content {
         flex-direction: column;
       }
+
+  @media (max-width: 768px) {
+    /* Adjust header text for mobile */
+    .header-info {
+      top: 10px;
+      left: 10px;
+      padding: 5px;
+      max-width: 90%;
+      max-height: auto;
+    }
+
+    .header-info h1 {
+      font-size: 1.1em;
+      line-height: 0.8;
+    }
+
+    .header-info h2,
+    .header-info h3,
+    .header-info h4 {
+      font-size: 0.7em;
+      line-height: 0.5;
+    }
+
+    /* Adjust header height for mobile */
+    header {
+      height: 100px; /* Reduce height for smaller screens */
+    }
+
+    /* Adjust navigation for mobile */
+    nav {
+      flex-direction: row; /* Keep links horizontal */
+      flex-wrap: wrap; /* Allow wrapping to the next line */
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav a {
+      padding: 5px 8px; /* Reduce padding for smaller screens */
+      font-size: 0.8em; /* Reduce font size for smaller screens */
+    }
+
+    /* Adjust profile image for mobile */
+    .profile-image {
+      width: 120px;
+      max-width: 100%; /* Ensure the image doesn't overflow */
+    }
 
       .main-content,
       .sidebar {
