@@ -29,9 +29,9 @@
     nav {
       display: flex;
       justify-content: flex-start;
-      gap: 8px; /* Adjusted gap for better spacing */
+      gap: 15px;
       background-color: #d3d3d3;
-      padding: 5px 10px; /* Reduced padding to fit content neatly */
+      padding: 5px 15px;
       border-radius: 15px;
       font-size: 0.9em;
       margin-bottom: 10px;
@@ -41,7 +41,7 @@
       color: black;
       text-decoration: none;
       font-weight: bold;
-      padding: 5px 8px; /* Reduced padding for consistent layout */
+      padding: 5px 10px;
       border-radius: 10px;
       transition: background-color 0.3s ease;
     }
@@ -63,14 +63,13 @@
       border-radius: 15px;
       padding: 15px;
       display: inline-block;
-      width: auto;
-      max-width: 80%; /* Keep the box from overflowing */
-      box-sizing: border-box;
-      color: white;
       position: absolute;
       top: 20px;
-      left: 520px;
-      transform: translateX(-50%); /* Center horizontally */
+      left: 20px;
+      width: auto;
+      max-widt: 90%;
+      box-sizing: border-box;
+      color: white;
     }
 
     .header-info h1 {
@@ -149,30 +148,60 @@
     /* Responsive Design */
     @media (max-width: 768px) {
       nav {
-        flex-wrap: wrap; /* Allow wrapping to the next line */
-        gap: 6px;
-        padding: 10px;
-      }
-
-      nav a {
-        padding: 5px 6px; /* Adjust padding for smaller screens */
-        font-size: 0.8em;
+        flex-direction: column;
+        gap: 8px;
       }
 
       header {
-        height: 150px; /* Reduce height for smaller screens */
+        height: 200px;
       }
 
-      .header-info {
-        top: 10px;
-        left: 10px;
-        padding: 10px;
-        max-width: 90%;
+      .content {
+        flex-direction: column;
       }
 
-      .header-info h1 {
-        font-size: 1.2em;
-      }
+  @media (max-width: 768px) {
+    /* Adjust header text for mobile */
+    .header-info {
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+      max-width: 90%;
+    }
+
+    .header-info h1 {
+      font-size: 1.2em;
+    }
+
+    .header-info h2,
+    .header-info h3,
+    .header-info h4 {
+      font-size: 0.9em;
+    }
+
+    /* Adjust header height for mobile */
+    header {
+      height: 150px; /* Reduce height for smaller screens */
+    }
+
+    /* Adjust navigation for mobile */
+    nav {
+      flex-direction: row; /* Keep links horizontal */
+      flex-wrap: wrap; /* Allow wrapping to the next line */
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav a {
+      padding: 5px 8px; /* Reduce padding for smaller screens */
+      font-size: 0.8em; /* Reduce font size for smaller screens */
+    }
+
+    /* Adjust profile image for mobile */
+    .profile-image {
+      width: 120px;
+      max-width: 100%; /* Ensure the image doesn't overflow */
+    }
 
       .main-content,
       .sidebar {
@@ -182,7 +211,6 @@
 
       .profile-image {
         width: 120px;
-        max-width: 100%;
       }
 
       footer {
