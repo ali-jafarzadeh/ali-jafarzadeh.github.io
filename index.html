@@ -45,6 +45,23 @@
       font-size: 0.9em;
       margin-bottom: 10px;
     }
+    <nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="nav-menu">
+    <li><a href="/index.html">About Me</a></li>
+    <li><a href="/research.html">Research</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a></li>
+    <li><a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+    <li><a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a></li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show'); /* Toggles the dropdown */
+  }
+</script>
 
     nav a {
       color: black;
@@ -187,6 +204,10 @@
       <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a>
     </nav>
 
+
+
+
+    
     <header>
       <div class="header-info">
         <h1>Ali Jafarzadeh</h1>
