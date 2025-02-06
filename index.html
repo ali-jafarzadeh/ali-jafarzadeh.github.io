@@ -4,21 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ali Jafarzadeh</title>
-  
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Ali Jafarzadeh, Finance PhD student at the University of Colorado Boulder. Research in corporate finance, private equity, and cryptocurrency markets.">
   <meta name="keywords" content="Ali Jafarzadeh, Finance PhD, CU Boulder, corporate finance, private equity, cryptocurrency, machine learning, innovation">
   <meta name="author" content="Ali Jafarzadeh">
 
-  <!-- Social Media Preview (Optional) -->
-  <meta property="og:title" content="Ali Jafarzadeh - Finance PhD Student">
-  <meta property="og:description" content="Researching corporate finance, private equity, innovation, and cryptocurrencies at the University of Colorado Boulder.">
-  <meta property="og:image" content="https://ali-jafarzadeh.github.io/assets/img/ali.jpeg">
-  <meta property="og:url" content="https://ali-jafarzadeh.github.io/">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali Jafarzadeh</title>
   <style>
     body {
       font-family: 'EB Garamond', serif;
@@ -37,33 +28,26 @@
 
     nav {
       display: flex;
-      justify-content: flex-start;
-      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
       background-color: #d3d3d3;
-      padding: 5px 20px;
+      padding: 10px 15px;
       border-radius: 15px;
-      font-size: 0.9em;
-      margin-bottom: 10px;
     }
-    <nav>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <ul id="nav-menu">
-    <li><a href="/index.html">About Me</a></li>
-    <li><a href="/research.html">Research</a></li>
-    <li><a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a></li>
-    <li><a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-    <li><a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a></li>
-  </ul>
-</nav>
 
-<script>
-  function toggleMenu() {
-    var menu = document.getElementById('nav-menu');
-    menu.classList.toggle('show'); /* Toggles the dropdown */
-  }
-</script>
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: nowrap;
+    }
 
-    nav a {
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
       color: black;
       text-decoration: none;
       font-weight: bold;
@@ -72,8 +56,43 @@
       transition: background-color 0.3s ease;
     }
 
-    nav a:hover {
+    nav ul li a:hover {
       background-color: #bbb;
+    }
+
+    /* Menu Toggle Button (Hamburger icon) */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Mobile View: Hide Menu by Default */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        background-color: #d3d3d3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+      }
+
+      nav ul.show {
+        display: block; /* Show the menu when toggled */
+      }
+
+      nav ul li {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .menu-toggle {
+        display: block; /* Show the toggle button on mobile */
+      }
     }
 
     header {
@@ -88,7 +107,6 @@
       background: rgba(50, 50, 50, 0.4);
       border-radius: 15px;
       padding: 15px;
-      display: inline-block;
       position: absolute;
       top: 20px;
       left: 20px;
@@ -105,7 +123,6 @@
       margin: 5px 0;
       font-size: 1em;
       font-weight: normal;
-      text-indent: 20px;
     }
 
     .content {
@@ -134,12 +151,6 @@
       min-height: 300px;
     }
 
-    .profile-image {
-      border-radius: 50%;
-      width: 200px;
-      margin-bottom: 10px;
-    }
-
     footer {
       text-align: center;
       padding: 20px 0;
@@ -147,34 +158,8 @@
       border-top: 1px solid #ccc;
     }
 
-    /* Responsive Design for Mobile Devices */
+    /* Mobile Content Layout */
     @media (max-width: 768px) {
-      body {
-        font-size: 14px;
-      }
-
-      nav {
-        flex-direction: column;
-        padding: 10px;
-        gap: 10px;
-      }
-
-      nav a {
-        padding: 10px;
-        font-size: 16px;
-      }
-
-      header {
-        height: 200px;
-      }
-
-      .header-info {
-        top: 10px;
-        left: 10px;
-        padding: 10px;
-        font-size: 14px;
-      }
-
       .content {
         flex-direction: column;
       }
@@ -182,10 +167,6 @@
       .main-content, .sidebar {
         width: 100%;
         min-height: auto;
-      }
-
-      .profile-image {
-        width: 150px;
       }
 
       footer {
@@ -197,17 +178,16 @@
 <body>
   <div class="main-container">
     <nav>
-      <a href="/index.html">About Me</a>
-      <a href="/research.html">Research</a>
-      <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-      <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Icon -->
+      <ul id="nav-menu">
+        <li><a href="/index.html">About Me</a></li>
+        <li><a href="/research.html">Research</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a></li>
+        <li><a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+        <li><a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a></li>
+      </ul>
     </nav>
 
-
-
-
-    
     <header>
       <div class="header-info">
         <h1>Ali Jafarzadeh</h1>
@@ -219,19 +199,11 @@
 
     <div class="content">
       <!-- Main Content -->
-<div class="main-content">
-  <p>
-    I am a PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. My research focuses on empirical corporate finance, private equity, innovation, machine learning, and cryptocurrency markets.
-  </p>
-  <p>
-    Before joining CU Boulder, I completed an M.S. in Economics with a minor in Mathematics at Tarbiat Modares University and a B.S. in Mechanical Engineering (Food Machinery specialization) at the University of Tehran.
-  </p>
-  <p>
-    Outside of academics, I played competitive volleyball during my undergraduate years. I also practice Avaz, the traditional art of Persian singing, and play the Ney. I enjoy exploring nature and observing wildlife and spending time with family and friends.
-  </p>
-</div>
-
-
+      <div class="main-content">
+        <p>I am a PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. My research focuses on empirical corporate finance, private equity, innovation, machine learning, and cryptocurrency markets.</p>
+        <p>Before joining CU Boulder, I completed an M.S. in Economics with a minor in Mathematics at Tarbiat Modares University and a B.S. in Mechanical Engineering (Food Machinery specialization) at the University of Tehran.</p>
+        <p>Outside of academics, I played competitive volleyball during my undergraduate years. I also practice Avaz, the traditional art of Persian singing, and play the Ney. I enjoy exploring nature and observing wildlife and spending time with family and friends.</p>
+      </div>
 
       <!-- Sidebar -->
       <div class="sidebar">
@@ -245,7 +217,7 @@
           Phone: 720 978 5834<br>
           <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a><br>
           <a href="https://github.com/ali-jafarzadeh" target="_blank" rel="noopener noreferrer">github.com/ali-jafarzadeh</a>
-  </p>
+        </p>
       </div>
     </div>
 
@@ -253,5 +225,12 @@
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh | University of Colorado Boulder | Contact: <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a></p>
     </footer>
   </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('nav-menu');
+      menu.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
