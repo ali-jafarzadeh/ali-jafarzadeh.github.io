@@ -28,26 +28,16 @@
 
     nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
       background-color: #d3d3d3;
-      padding: 10px 15px;
+      padding: 5px 20px;
       border-radius: 15px;
+      font-size: 0.9em;
+      margin-bottom: 10px;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      flex-wrap: nowrap;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
+    nav a {
       color: black;
       text-decoration: none;
       font-weight: bold;
@@ -56,43 +46,8 @@
       transition: background-color 0.3s ease;
     }
 
-    nav ul li a:hover {
+    nav a:hover {
       background-color: #bbb;
-    }
-
-    /* Menu Toggle Button (Hamburger icon) */
-    .menu-toggle {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    /* Mobile View: Hide Menu by Default */
-    @media (max-width: 768px) {
-      nav ul {
-        display: none; /* Hide menu by default on mobile */
-        flex-direction: column;
-        background-color: #d3d3d3;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
-      }
-
-      nav ul.show {
-        display: block; /* Show the menu when toggled */
-      }
-
-      nav ul li {
-        margin: 10px 0;
-        text-align: center;
-      }
-
-      .menu-toggle {
-        display: block; /* Show the toggle button on mobile */
-      }
     }
 
     header {
@@ -107,6 +62,7 @@
       background: rgba(50, 50, 50, 0.4);
       border-radius: 15px;
       padding: 15px;
+      display: inline-block;
       position: absolute;
       top: 20px;
       left: 20px;
@@ -116,12 +72,6 @@
     .header-info h1 {
       font-size: 1.6em;
       margin: 0;
-      font-weight: normal;
-    }
-
-    .header-info h2, .header-info h3, .header-info h4 {
-      margin: 5px 0;
-      font-size: 1em;
       font-weight: normal;
     }
 
@@ -151,6 +101,12 @@
       min-height: 300px;
     }
 
+    .profile-image {
+      border-radius: 50%;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px 0;
@@ -158,15 +114,57 @@
       border-top: 1px solid #ccc;
     }
 
-    /* Mobile Content Layout */
+    section {
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Fix for CV Icon */
+    nav a[href$="cv.pdf"]::before,
+    nav a[href$="cv.pdf"]::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    /* Responsive Design */
     @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header {
+        height: 200px;
+      }
+
       .content {
         flex-direction: column;
       }
 
-      .main-content, .sidebar {
+      .main-content,
+      .sidebar {
         width: 100%;
         min-height: auto;
+      }
+
+      .profile-image {
+        width: 120px;
       }
 
       footer {
@@ -178,14 +176,11 @@
 <body>
   <div class="main-container">
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Icon -->
-      <ul id="nav-menu">
-        <li><a href="/index.html">About Me</a></li>
-        <li><a href="/research.html">Research</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a></li>
-        <li><a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-        <li><a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a></li>
-      </ul>
+      <a href="/index.html">About Me</a>
+      <a href="/research.html">Research</a>
+      <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
+      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank">CU Page</a>
     </nav>
 
     <header>
@@ -226,11 +221,5 @@
     </footer>
   </div>
 
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById('nav-menu');
-      menu.classList.toggle('show');
-    }
-  </script>
 </body>
 </html>
