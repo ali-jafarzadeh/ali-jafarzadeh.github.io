@@ -38,16 +38,16 @@ a:hover {
 
 /* Flexbox Layout for Content */
 .content {
-  display: flex; /* Enable Flexbox layout */
-  gap: 20px; /* Space between the boxes */
-  align-items: flex-start; /* Align the boxes at the top */
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
   margin-top: 20px;
 }
 
 /* Main Content Box */
 .main-content {
-  flex: 2; /* Larger width for main content */
-  height: 300px; /* Fixed height to match sidebar */
+  flex: 2;
+  height: 300px;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
@@ -56,8 +56,8 @@ a:hover {
 
 /* Sidebar Box */
 .sidebar {
-  flex: 1; /* Smaller width for contact box */
-  height: 300px; /* Same height as main content */
+  flex: 1;
+  height: 300px;
   background-color: #fff;
   border-radius: 15px;
   text-align: center;
@@ -82,9 +82,51 @@ a:hover {
   margin-right: auto;
 }
 
-/* Remove Icon for CV Link */
-nav a[href$="cv.pdf"]::before {
-  content: none !important;
+/* Navigation Bar Styling */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #2980b9;
+}
+
+/* Mobile Responsiveness (Fixed) */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px;
+  }
 }
 
 /* Education and Projects Section Styling */
@@ -99,37 +141,6 @@ ul {
 
 ul li {
   margin-bottom: 10px;
-}
-nav {
-  display: flex;
-  justify-content: center; /* Centers the navigation items horizontally */
-  background-color: #ffffff; /* Background for better visibility */
-  padding: 10px;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping on mobile */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0 15px; /* Space between items */
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    justify-content: space-around;
-    font-size: 14px; /* Adjust font size on smaller screens */
-  }
 }
 
 /* Footer Styling */
