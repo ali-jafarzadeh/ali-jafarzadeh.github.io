@@ -29,9 +29,9 @@
     nav {
       display: flex;
       justify-content: flex-start;
-      gap: 20px;
+      gap: 15px;
       background-color: #d3d3d3;
-      padding: 5px 20px;
+      padding: 5px 15px;
       border-radius: 15px;
       font-size: 0.9em;
       margin-bottom: 10px;
@@ -41,7 +41,7 @@
       color: black;
       text-decoration: none;
       font-weight: bold;
-      padding: 5px 15px;
+      padding: 5px 10px;
       border-radius: 10px;
       transition: background-color 0.3s ease;
     }
@@ -66,6 +66,7 @@
       position: absolute;
       top: 20px;
       left: 20px;
+      max-widt: 300px;
       color: white;
     }
 
@@ -146,7 +147,7 @@
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
       }
 
       header {
@@ -163,6 +164,7 @@
       top: 10px;
       left: 10px;
       padding: 10px;
+      max-width: 90%;
     }
 
     .header-info h1 {
@@ -189,7 +191,7 @@
     }
 
     nav a {
-      padding: 5px 10px; /* Reduce padding for smaller screens */
+      padding: 5px 8px; /* Reduce padding for smaller screens */
       font-size: 0.8em; /* Reduce font size for smaller screens */
     }
 
