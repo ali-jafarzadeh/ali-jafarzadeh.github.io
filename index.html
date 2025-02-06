@@ -157,6 +157,48 @@
         flex-direction: column;
       }
 
+  @media (max-width: 768px) {
+    /* Adjust header text for mobile */
+    .header-info {
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+    }
+
+    .header-info h1 {
+      font-size: 1.2em;
+    }
+
+    .header-info h2,
+    .header-info h3,
+    .header-info h4 {
+      font-size: 0.9em;
+    }
+
+    /* Adjust header height for mobile */
+    header {
+      height: 150px; /* Reduce height for smaller screens */
+    }
+
+    /* Adjust navigation for mobile */
+    nav {
+      flex-direction: row; /* Keep links horizontal */
+      flex-wrap: wrap; /* Allow wrapping to the next line */
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav a {
+      padding: 5px 10px; /* Reduce padding for smaller screens */
+      font-size: 0.8em; /* Reduce font size for smaller screens */
+    }
+
+    /* Adjust profile image for mobile */
+    .profile-image {
+      width: 120px;
+      max-width: 100%; /* Ensure the image doesn't overflow */
+    }
+
       .main-content,
       .sidebar {
         width: 100%;
