@@ -142,9 +142,17 @@ nav ul li a:hover {
     min-height: auto;
   }
 
-  .profile-image {
-    width: 150px;
-  }
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Ensures the image maintains proportions */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
   footer {
     font-size: 12px;
