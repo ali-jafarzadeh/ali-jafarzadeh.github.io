@@ -13,18 +13,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body{font-family:"Vazirmatn",system-ui,sans-serif;background:#f8f9fa;margin:0;color:#111}
-    .wrap{max-width:1200px;margin:30px auto;background:#eaeaea;border-radius:15px;padding:20px}
-    nav{display:flex;gap:15px;background:#f2e6d9;padding:6px 14px;border-radius:15px;flex-wrap:wrap}
-    nav a{color:#000;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:10px}
-    nav a:hover{background:#e9ddd0}
-    main{background:#fff;border-radius:15px;padding:18px;box-shadow:0 0 10px rgba(0,0,0,.08)}
-    h1{color:#0f4c81;margin-top:0}
-    .meta{color:#666;font-size:.92em;margin-bottom:12px}
-    .tag{display:inline-block;background:#f0f0f0;border-radius:999px;padding:2px 8px;margin-left:6px;font-size:.85em}
-    .post-nav{display:flex;justify-content:space-between;border-top:1px solid #eee;margin-top:24px;padding-top:12px}
+    :root{
+      --blue:#134b70;   /* Persian blue */
+      --green:#0f5c4d;  /* deep green */
+      --red:#b23b31;    /* pomegranate */
+      --pink:#d46a8c;   /* rose pink */
+      --bg:#f9fafc;     /* light neutral */
+      --ink:#111;
+      --muted:#666;
+      --card:#ffffff;
+      --shadow:0 0 12px rgba(0,0,0,.08);
+    }
+
+    body{font-family:"Vazirmatn",system-ui,sans-serif;background:var(--bg);margin:0;color:var(--ink)}
+    .wrap{max-width:1200px;margin:30px auto;background:#eef3f8;border-radius:15px;padding:20px}
+
+    /* top nav */
+    nav{display:flex;gap:15px;background:var(--blue);padding:6px 14px;border-radius:15px;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:10px;transition:background-color .2s}
+    nav a:hover{background:var(--green)}
+
+    /* hero to match FA index */
+    .hero{
+      background:
+        linear-gradient(rgba(20,32,44,.45), rgba(20,32,44,.35)),
+        url('/assets/img/ir.jpg') center/cover no-repeat;
+      height:160px; border-radius:15px; margin:12px 0 15px; position:relative; color:#fff;
+    }
+    .hero .hgroup{position:absolute; right:10px; top:10px; background:rgba(0,0,0,.45); padding:8px 10px; border-radius:10px}
+    .hero h1{margin:0; font-size:1.35em}
+    .hero p{margin:4px 0 0; font-size:.95em}
+
+    main{background:var(--card);border-radius:15px;padding:18px;box-shadow:var(--shadow)}
+    h1{color:var(--blue);margin:0 0 6px}
+    .meta{color:var(--muted);font-size:.92em;margin-bottom:12px}
+    .tag{display:inline-block;background:#eef2ff;color:var(--blue);border-radius:999px;padding:2px 8px;margin-left:6px;font-size:.85em}
+
+    /* ornamental divider (subtle Persian motif) */
+    .orn{
+      border:0; height:12px; margin:16px 0;
+      background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="12"><path d="M0 6 H100 M110 6 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 M140 6 H260" stroke="%23134b70" stroke-width="2" fill="none"/></svg>')
+      center/260px 12px no-repeat; opacity:.9;
+    }
+
+    a{color:var(--blue)} a:hover{color:var(--red); text-decoration:underline}
+    .post-nav{display:flex;justify-content:space-between;border-top:1px solid #e6e6e6;margin-top:24px;padding-top:12px}
+
+    @media (max-width:768px){
+      .hero{height:120px}
+      .hero h1{font-size:1.1em}
+    }
   </style>
 
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -47,8 +88,15 @@
       <a href="/fa/">یادداشت‌ها</a>
     </nav>
 
+    <!-- hero banner -->
+    <div class="hero" role="img" aria-label="پس‌زمینه ایرانی">
+      <div class="hgroup">
+        <h1>قیاس تمدن‌ها</h1>
+        <p>یادداشت</p>
+      </div>
+    </div>
+
     <main role="main">
-      <h1>قیاس تمدن‌ها</h1>
       <div class="meta">۲۰ مرداد ۱۴۰۴ · <span class="tag">تاریخ</span> <span class="tag">تمدن</span></div>
 
       <p>دودمان چین (۲۲۱–۲۰۶ ق.م) نقطه‌ی آغاز امپراتوری یکپارچه‌ی چین بود. در این دوره، <em>لگالیسم</em> یا قانون‌مداری سخت‌گیرانه به‌عنوان شالوده‌ی حکومت تثبیت شد. هدف آن نظم، اطاعت و انسجام اجتماعی بود؛ فرد در برابر قانون و دولت هیچ جایگاهی نداشت و تنها کارکردش ایفای نقش در حفظ کلان‌ساخت قدرت بود. میراث این تفکر اقتدارگرا، بعدها نیز در سنت سیاسی چین زنده ماند و مفهوم «قدرت مطلق دولت» را مشروع جلوه داد.</p>
@@ -69,8 +117,11 @@
 
       <p>امروز، ظهور شرکت‌هایی چون BYD در کنار تسلا تنها یک موفقیت اقتصادی نیست؛ بلکه نمود تداوم و دگرگونی یک سنت تاریخی است. چین با تکیه بر پیوند دیرینه‌ی لگالیسم و کنفوسیوسیسم، تجربه‌ی کمونیسم و اقتدارگرایی، و بهره‌گیری از علم و بازار، قرن تحقیر را به قرن خیزش بدل کرده است.</p>
 
+      <hr class="orn">
+
       <div class="post-nav">
         <a href="/fa/">← بازگشت به یادداشت‌ها</a>
+        <!-- space for next/prev if you add more posts -->
       </div>
     </main>
   </div>
