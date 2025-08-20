@@ -15,10 +15,10 @@
   <!-- Favicon -->
   <link rel="icon" href="/assets/img/leeds.png" type="image/png" />
 
-  <!-- Fonts (clean Persian + subtle display for headings) -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Open Graph (optional but nice) -->
+  <!-- Open Graph -->
   <meta property="og:locale" content="fa_IR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="علی جعفرزاده — یادداشت‌ها">
@@ -28,26 +28,32 @@
 
   <style>
     :root{
-      --lapis:#0f4c81;  /* لاجوردی */
-      --turq:#1aa6ad;   /* فیروزه‌ای */
-      --sand:#f2e6d9;   /* خاکی روشن */
+      --blue:#134b70;   /* لاجوردی */
+      --green:#0f5c4d;  /* سبز تیره */
+      --red:#b23b31;    /* قرمز اناری */
+      --pink:#d46a8c;   /* صورتی ملایم */
+      --bg:#f9fafc;     /* پس‌زمینه روشن */
       --ink:#111;
       --muted:#666;
       --card:#ffffff;
-      --shadow:0 0 10px rgba(0,0,0,.08);
+      --shadow:0 0 12px rgba(0,0,0,.08);
     }
 
-    /* Base layout (harmonized with your English page) */
-    body { font-family:"Vazirmatn",system-ui,-apple-system,Segoe UI,Roboto,sans-serif; margin:0; padding:0; background:#f8f9fa; color:var(--ink); }
-    .main-container { background:#eaeaea; border-radius:15px; padding:20px; max-width:1200px; margin:30px auto; }
+    body { font-family:"Vazirmatn",system-ui,-apple-system,Segoe UI,Roboto,sans-serif; margin:0; padding:0; background:var(--bg); color:var(--ink); }
+    .main-container { background:#f2f4f8; border-radius:15px; padding:20px; max-width:1200px; margin:30px auto; }
 
-    nav[aria-label="Primary"] { display:flex; justify-content:flex-start; gap:15px; background:var(--sand); padding:6px 14px; border-radius:15px; font-size:.95em; margin-bottom:10px; flex-wrap:wrap; }
-    nav a { color:#000; text-decoration:none; font-weight:700; padding:6px 10px; border-radius:10px; transition:background-color .2s ease; }
-    nav a:hover { background:#e9ddd0; }
-    nav a.active { background:#e0d4c7; }
+    nav[aria-label="Primary"] { display:flex; justify-content:flex-start; gap:15px; background:var(--blue); padding:6px 14px; border-radius:15px; font-size:.95em; margin-bottom:10px; flex-wrap:wrap; }
+    nav a { color:#fff; text-decoration:none; font-weight:700; padding:6px 10px; border-radius:10px; transition:background-color .2s ease; }
+    nav a:hover { background:var(--green); }
+    nav a.active { background:var(--red); }
 
-    header { background:url('/assets/img/background-image.avif') center/cover no-repeat; height:220px; border-radius:15px; color:#fff; position:relative; }
-    .header-info { background:rgba(50,50,50,.45); border-radius:10px; padding:8px 10px; display:inline-block; position:absolute; top:10px; right:10px; color:#fff; }
+    header{
+      background:
+        linear-gradient(rgba(20,32,44,.45), rgba(20,32,44,.35)),
+        url('/assets/img/ir.jpg') center/cover no-repeat;
+      height:220px; border-radius:15px; color:#fff; position:relative;
+    }
+    .header-info { background:rgba(0,0,0,.45); border-radius:10px; padding:8px 10px; display:inline-block; position:absolute; top:10px; right:10px; color:#fff; }
     .header-info h1 { margin:0 0 4px; font-size:1.35em; font-weight:700; }
     .header-info p  { margin:0; font-size:.95em; }
 
@@ -56,33 +62,29 @@
     aside[role="complementary"] { flex:1; background:var(--card); border-radius:15px; text-align:right; padding:18px; box-shadow:var(--shadow); min-height:260px; }
 
     section { margin-bottom:20px; }
-    section h2 { margin:10px 0; font-size:1.1em; color:var(--lapis); border-bottom:2px solid var(--turq); padding-bottom:6px; }
+    section h2 { margin:10px 0; font-size:1.1em; color:var(--blue); border-bottom:2px solid var(--pink); padding-bottom:6px; }
 
-    /* Posts & podcasts list */
     .post { padding:12px 0; border-bottom:1px solid #eee; }
     .post:last-child { border-bottom:none; }
-    .post a { text-decoration:none; font-weight:700; color:var(--lapis); }
-    .post a:hover { text-decoration:underline; }
+    .post a { text-decoration:none; font-weight:700; color:var(--blue); }
+    .post a:hover { color:var(--red); }
     .meta { font-size:.9em; color:var(--muted); margin-top:3px; }
-    .tag { display:inline-block; font-size:.85em; background:#f0f0f0; padding:2px 8px; border-radius:999px; margin-left:6px; }
+    .tag { display:inline-block; font-size:.85em; background:#eef2ff; color:var(--blue); padding:2px 8px; border-radius:999px; margin-left:6px; }
 
-    /* Sidebar */
     .profile-image { border-radius:50%; width:160px; margin:0 0 10px 0; }
     .card { border:1px solid #eee; border-radius:12px; padding:12px; margin-bottom:12px; }
-    .card h3 { margin:0 0 8px; font-size:1em; color:var(--lapis); }
+    .card h3 { margin:0 0 8px; font-size:1em; color:var(--green); }
     .list { margin:0; padding:0; list-style:none; }
     .list li { margin:8px 0; }
     .list a { text-decoration:none; color:var(--ink); }
-    .list a:hover { color:var(--lapis); text-decoration:underline; }
+    .list a:hover { color:var(--red); text-decoration:underline; }
 
-    /* Ornamental divider (minimal Persian motif) */
     .orn{ border:0; height:12px; margin:16px 0;
-      background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="12"><path d="M0 6 H100 M110 6 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 M140 6 H260" stroke="%230f4c81" stroke-width="2" fill="none"/></svg>') center/260px 12px no-repeat; opacity:.85;
+      background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="12"><path d="M0 6 H100 M110 6 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 M140 6 H260" stroke="%23134b70" stroke-width="2" fill="none"/></svg>') center/260px 12px no-repeat; opacity:.9;
     }
 
     footer { text-align:center; padding:18px 0; margin-top:20px; border-top:1px solid #ccc; font-size:.95em; }
 
-    /* Mobile */
     @media (max-width: 768px) {
       header { height:140px; }
       .content { flex-direction:column; }
@@ -90,7 +92,7 @@
     }
   </style>
 
-  <!-- Structured data: connect this WebPage to your Person on the English homepage via @id -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -113,11 +115,7 @@
 <body>
   <div class="main-container">
     <nav aria-label="Primary">
-      <a href="/index.html">About Me</a>
-      <a href="/research.html">Research</a>
-      <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-      <a href="https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh" target="_blank" rel="noopener">CU Page</a>
+      <a href="/index.html">صفحه آکادمیک</a>
       <a href="/fa/" class="active">یادداشت‌ها</a>
     </nav>
 
@@ -129,29 +127,13 @@
     </header>
 
     <div class="content">
-      <!-- Main -->
       <main role="main">
         <section aria-labelledby="latest-posts">
           <h2 id="latest-posts">آخرین نوشته‌ها</h2>
-
-          <!-- Example posts (make files in /fa/posts/) -->
           <article class="post">
             <a href="/fa/posts/civilization-comparison.html">قیاس تمدن‌ها</a>
             <div class="meta">۲۰ مرداد ۱۴۰۴ · <span class="tag">تاریخ</span> <span class="tag">تمدن</span></div>
             <p>از چین باستان تا چین معاصر: چگونه لگالیسم، کنفوسیوسیسم و کمونیسم مسیر قدرت را شکل دادند.</p>
-          </article>
-
-
-          <article class="post">
-            <a href="/fa/posts/pe-innovation.html">پرایوت‌اکویتی و نوآوری: شواهد از ثبت اختراع</a>
-            <div class="meta">۲۸ مرداد ۱۴۰۴ · <span class="tag">شرکت‌ها</span> <span class="tag">نوآوری</span></div>
-            <p>پس از معاملات PE چه بر تحقیق‌وتوسعه و کیفیت اختراع می‌گذرد؟</p>
-          </article>
-
-          <article class="post">
-            <a href="/fa/posts/crypto-networks-granger.html">شبکه‌های رمزارز و آزمون گرنجر</a>
-            <div class="meta">۲۶ مرداد ۱۴۰۴ · <span class="tag">رمزارز</span> <span class="tag">شبکه</span></div>
-            <p>ساخت شبکه از همبستگی‌ها و واکنش قیمت‌ها به شوک‌ها؛ یک نگاه داده‌محور.</p>
           </article>
         </section>
 
@@ -159,7 +141,6 @@
 
         <section aria-labelledby="latest-podcasts">
           <h2 id="latest-podcasts">پادکست‌ها</h2>
-          <!-- Example podcast (make file in /fa/podcasts/) -->
           <article class="post">
             <a href="/fa/podcasts/microstructure-ep1.html">ریزساختار بازار — قسمت ۱</a>
             <div class="meta">۲۳ مرداد ۱۴۰۴ · ۱۲ دقیقه</div>
@@ -168,7 +149,6 @@
         </section>
       </main>
 
-      <!-- Sidebar -->
       <aside role="complementary">
         <img src="/assets/img/ali.avif" alt="عکس علی جعفرزاده" class="profile-image" />
         <div class="card">
