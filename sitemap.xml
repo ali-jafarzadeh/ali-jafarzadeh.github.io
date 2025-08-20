@@ -1,32 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Home (canonical = /) -->
+  <url>
+    <loc>https://ali-jafarzadeh.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ali-jafarzadeh.com/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ali-jafarzadeh.com/fa/"/>
+    <priority>1.00</priority>
+  </url>
 
-<url>
-  <loc>https://ali-jafarzadeh.com/</loc>
-  <lastmod>2025-02-11T18:27:35+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://ali-jafarzadeh.com/index.html</loc>
-  <lastmod>2025-02-11T18:27:35+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ali-jafarzadeh.com/research.html</loc>
-  <lastmod>2025-02-11T18:27:35+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ali-jafarzadeh.com/assets/docs/cv.pdf</loc>
-  <lastmod>2025-02-11T18:27:35+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- Research -->
+  <url>
+    <loc>https://ali-jafarzadeh.com/research.html</loc>
+    <priority>0.80</priority>
+  </url>
 
+  <!-- CV -->
+  <url>
+    <loc>https://ali-jafarzadeh.com/assets/docs/cv.pdf</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Persian hub -->
+  <url>
+    <loc>https://ali-jafarzadeh.com/fa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ali-jafarzadeh.com/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ali-jafarzadeh.com/fa/"/>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Example Persian articles (add as you create) -->
+  <url>
+    <loc>https://ali-jafarzadeh.com/fa/posts/market-microstructure.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://ali-jafarzadeh.com/fa/posts/pe-innovation.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Example Persian podcast -->
+  <url>
+    <loc>https://ali-jafarzadeh.com/fa/podcasts/microstructure-ep1.html</loc>
+    <priority>0.60</priority>
+  </url>
 
 </urlset>
