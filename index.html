@@ -7,9 +7,13 @@
   <title>Ali Jafarzadeh | Finance PhD Candidate</title>
 
   <meta name="description"
-        content="Ali Jafarzadeh is a Finance PhD Candidate at the Leeds School of Business, University of Colorado Boulder. His research focuses on corporate finance, innovation, and industrial organization.">
+        content="Ali Jafarzadeh is a Finance PhD Candidate at the Leeds School of Business, University of Colorado Boulder. His research focuses on corporate finance, innovation, industrial organization, and technological change.">
+
+  <meta name="keywords"
+        content="Ali Jafarzadeh, Finance PhD, CU Boulder, corporate finance, innovation, industrial organization, mergers and acquisitions, technological change">
 
   <meta name="author" content="Ali Jafarzadeh">
+
   <link rel="canonical" href="https://ali-jafarzadeh.com/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,10 +48,11 @@
     :root {
       --background: #fbfaf7;
       --surface: #ffffff;
-      --text: #202124;
-      --muted: #68645d;
+      --text: #222222;
+      --muted: #6b675f;
       --navy: #17324d;
       --gold: #a88a45;
+      --gold-light: #d7c69b;
       --border: #dedbd3;
     }
 
@@ -76,10 +81,14 @@
     nav {
       background: rgba(251, 250, 247, 0.96);
       border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
     }
 
     .nav-inner {
-      min-height: 72px;
+      min-height: 70px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -96,7 +105,7 @@
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 26px;
       flex-wrap: wrap;
     }
 
@@ -108,7 +117,7 @@
     }
 
     .nav-links a:hover {
-      color: var(--navy);
+      color: var(--gold);
     }
 
     .hero {
@@ -116,7 +125,7 @@
       grid-template-columns: 1fr 245px;
       gap: 75px;
       align-items: center;
-      padding: 82px 0 72px;
+      padding: 78px 0 72px;
     }
 
     .eyebrow {
@@ -179,6 +188,7 @@
       border-radius: 3px;
       font-size: 14px;
       font-weight: 600;
+      transition: 0.2s ease;
     }
 
     .button.primary {
@@ -187,7 +197,8 @@
     }
 
     .button:hover {
-      opacity: 0.86;
+      transform: translateY(-1px);
+      opacity: 0.9;
     }
 
     .profile-wrap {
@@ -222,6 +233,7 @@
 
     section {
       padding: 62px 0;
+      scroll-margin-top: 80px;
     }
 
     .section-label {
@@ -248,7 +260,7 @@
     .paper-title {
       font-family: "Libre Baskerville", Georgia, serif;
       color: var(--navy);
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 700;
       margin-bottom: 5px;
     }
@@ -256,11 +268,11 @@
     .paper-status {
       color: var(--muted);
       font-style: italic;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .paper-description {
-      max-width: 800px;
+      max-width: 810px;
     }
 
     .paper-links {
@@ -278,7 +290,7 @@
     }
 
     .paper-links a:hover {
-      text-decoration: underline;
+      color: var(--gold);
     }
 
     .conference-line {
@@ -287,18 +299,15 @@
       font-size: 15px;
     }
 
-    .research-link {
-      margin-top: 24px;
+    .subsection-title {
+      margin-top: 55px;
+      margin-bottom: 24px;
+      font-size: 24px;
     }
 
-    .research-link a {
-      color: var(--navy);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .research-link a:hover {
-      text-decoration: underline;
+    .wip-paper {
+      padding: 5px 0 15px;
+      max-width: 850px;
     }
 
     .agenda-grid {
@@ -327,6 +336,15 @@
       max-width: 800px;
     }
 
+    .about-text a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .about-text a:hover {
+      color: var(--gold);
+    }
+
     footer {
       border-top: 1px solid var(--border);
       padding: 28px 0 38px;
@@ -340,7 +358,7 @@
     }
 
     footer a:hover {
-      text-decoration: underline;
+      color: var(--gold);
     }
 
     @media (max-width: 760px) {
@@ -351,8 +369,8 @@
       .nav-inner {
         align-items: flex-start;
         flex-direction: column;
-        padding: 18px 0;
-        gap: 12px;
+        padding: 16px 0;
+        gap: 11px;
       }
 
       .nav-links {
@@ -362,7 +380,7 @@
       .hero {
         grid-template-columns: 1fr;
         gap: 36px;
-        padding: 55px 0;
+        padding: 52px 0;
       }
 
       .profile-wrap {
@@ -393,28 +411,35 @@
 
   <nav>
     <div class="container nav-inner">
-      <a href="/" class="nav-name">Ali Jafarzadeh</a>
+      <a href="#top" class="nav-name">Ali Jafarzadeh</a>
 
       <div class="nav-links">
-        <a href="/research.html">Research</a>
-        <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="#research">Research</a>
+        <a href="#interests">Research Interests</a>
         <a href="#about">About</a>
+        <a href="/assets/docs/cv.pdf"
+           target="_blank"
+           rel="noopener noreferrer">CV</a>
         <a href="/fa/">فارسی</a>
       </div>
     </div>
   </nav>
 
-  <main>
+  <main id="top">
 
     <div class="container">
       <section class="hero">
 
         <div>
-          <div class="eyebrow">Finance · University of Colorado Boulder</div>
+          <div class="eyebrow">
+            Finance · University of Colorado Boulder
+          </div>
 
           <h1>Ali Jafarzadeh</h1>
 
-          <div class="position">PhD Candidate in Finance</div>
+          <div class="position">
+            PhD Candidate in Finance
+          </div>
 
           <div class="institution">
             Leeds School of Business<br>
@@ -432,13 +457,21 @@
           </p>
 
           <div class="hero-links">
-            <a href="/research.html" class="button primary">Research</a>
+            <a href="#research" class="button primary">
+              Research
+            </a>
+
             <a href="/assets/docs/cv.pdf"
                target="_blank"
                rel="noopener noreferrer"
-               class="button">CV</a>
+               class="button">
+              CV
+            </a>
+
             <a href="mailto:ali.jafarzadeh@colorado.edu"
-               class="button">Email</a>
+               class="button">
+              Email
+            </a>
           </div>
         </div>
 
@@ -454,11 +487,11 @@
 
     <hr class="divider">
 
-    <section>
+    <section id="research">
       <div class="container">
 
-        <div class="section-label">Featured Research</div>
-        <h2>Current Research</h2>
+        <div class="section-label">Research</div>
+        <h2>Working Papers</h2>
 
         <div class="featured-paper">
 
@@ -471,33 +504,43 @@
           </div>
 
           <div class="paper-description">
-            This paper studies how firms' positions within evolving technological
-            trajectories shape acquisition decisions and the choice between
-            developing innovation internally and acquiring it externally.
+            This paper studies how firms' positions within evolving
+            technological trajectories shape acquisition decisions and the
+            choice between developing innovation internally and acquiring it
+            externally.
           </div>
 
           <div class="paper-links">
-            <a href="/assets/docs/Patent%20Trajectories%20and%20M%26A%20Choices.pdf"
+            <a href="/assets/docs/Innovation-Dynamics-and-Acquisition-Decisions.pdf"
                target="_blank"
                rel="noopener noreferrer">
               PDF
-            </a>
-
-            <a href="/research.html">
-              Research Page
             </a>
           </div>
 
           <div class="conference-line">
             Scheduled for presentation at the Financial Management Association
-            Annual Meeting (FMA) 2026 and Southern Finance Association Annual
-            Meeting (SFA) 2026.
+            Annual Meeting (FMA) 2026 and the Southern Finance Association
+            Annual Meeting (SFA) 2026.
           </div>
 
         </div>
 
-        <div class="research-link">
-          <a href="/research.html">View all research →</a>
+        <h2 class="subsection-title">Work in Progress</h2>
+
+        <div class="wip-paper">
+
+          <div class="paper-title">
+            Moody's 20th-Century Industrial Data:
+            Variety and Quality of Firm Disclosure
+          </div>
+
+          <div class="paper-description">
+            This project constructs a large-scale historical dataset from
+            Moody's twentieth-century industrial manuals to study variation in
+            the quantity, composition, and quality of firm disclosure over time.
+          </div>
+
         </div>
 
       </div>
@@ -505,7 +548,7 @@
 
     <hr class="divider">
 
-    <section>
+    <section id="interests">
       <div class="container">
 
         <div class="section-label">Research Agenda</div>
@@ -517,7 +560,7 @@
             <h3>Innovation & Technological Change</h3>
             <p>
               How technological trajectories evolve and how firms respond to
-              changes in the direction of innovation.
+              shifts in the direction of innovation.
             </p>
           </div>
 
@@ -532,8 +575,8 @@
           <div class="agenda-item">
             <h3>Capital Allocation & Growth</h3>
             <p>
-              How financing and investment decisions affect firm growth,
-              reallocation, and long-run economic outcomes.
+              How financing, investment, and organizational choices affect
+              firm growth and economic reallocation.
             </p>
           </div>
 
@@ -569,6 +612,13 @@
             friends.
           </p>
 
+          <p>
+            Contact:
+            <a href="mailto:ali.jafarzadeh@colorado.edu">
+              ali.jafarzadeh@colorado.edu
+            </a>
+          </p>
+
         </div>
 
       </div>
@@ -579,10 +629,7 @@
   <footer>
     <div class="container">
       © <script>document.write(new Date().getFullYear());</script>
-      Ali Jafarzadeh · University of Colorado Boulder ·
-      <a href="mailto:ali.jafarzadeh@colorado.edu">
-        ali.jafarzadeh@colorado.edu
-      </a>
+      Ali Jafarzadeh · Leeds School of Business · University of Colorado Boulder
     </div>
   </footer>
 
