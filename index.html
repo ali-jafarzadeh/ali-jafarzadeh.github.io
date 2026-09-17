@@ -3,38 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ali Jafarzadeh is a Finance PhD student at the University of Colorado Boulder. Research in corporate finance, private equity, and cryptocurrency markets.">
-  <meta name="keywords" content="Ali Jafarzadeh, Finance PhD, CU Boulder, corporate finance, private equity, cryptocurrency, machine learning, innovation">
-  <meta name="author" content="Ali Jafarzadeh">
-  <title>Ali Jafarzadeh | Finance PhD Candidate at CU Boulder</title>
-  <link rel="canonical" href="https://ali-jafarzadeh.com/">
-  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-  <meta name="citation_title" content="Patent Trajectories and M&A Choices">
-  <meta name="citation_author" content="Ali Jafarzadeh">
-  <meta name="citation_publication_date" content="2026">
-  <meta name="citation_pdf_url" content="https://ali-jafarzadeh.com/path-to-paper.pdf">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ali Jafarzadeh",
-    "url": "https://ali-jafarzadeh.com",
-    "image": "https://ali-jafarzadeh.com/assets/img/ali.jpeg",
-    "jobTitle": "Finance PhD Cadidate",
-    "worksFor": {
-    "@type": "Organization",
-    "name": "University of Colorado Boulder"
-  },
-    "sameAs": [
-      "https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh",
-      "https://github.com/ali-jafarzadeh",
-      "https://www.linkedin.com/in/ali-jafarzadeh"
-    ]
-  }
-  </script>
 
-  <!-- Structured Data for Logo -->
+  <title>Ali Jafarzadeh | Finance PhD Candidate</title>
+
+  <meta name="description"
+        content="Ali Jafarzadeh is a Finance PhD Candidate at the Leeds School of Business, University of Colorado Boulder. His research focuses on corporate finance, innovation, and industrial organization.">
+
+  <meta name="author" content="Ali Jafarzadeh">
+  <link rel="canonical" href="https://ali-jafarzadeh.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  <link rel="icon" href="/assets/img/leeds.png" type="image/png">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,283 +27,351 @@
     "name": "Ali Jafarzadeh",
     "url": "https://ali-jafarzadeh.com",
     "image": "https://ali-jafarzadeh.com/assets/img/ali2.jpg",
-    "logo": "https://ali-jafarzadeh.com/assets/img/leeds.png",
-    "description": "PhD student in Finance at the Leeds School of Business, University of Colorado Boulder. Research focuses on empirical corporate finance, private equity, and cryptocurrency markets."
+    "jobTitle": "Finance PhD Candidate",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "University of Colorado Boulder"
+    },
+    "sameAs": [
+      "https://www.colorado.edu/business/leeds-directory/ali-jafarzadeh",
+      "https://github.com/ali-jafarzadeh",
+      "https://www.linkedin.com/in/ali-jafarzadeh-59336b121/"
+    ]
   }
   </script>
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://ali-jafarzadeh.com" />
-
-
   <style>
-    body {
-      font-family: 'EB Garamond', serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
+    * {
+      box-sizing: border-box;
     }
 
-    .main-container {
-      background-color: #eaeaea;
-      border-radius: 15px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 30px auto;
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #222;
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 30px;
     }
 
     nav {
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+      margin-bottom: 55px;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    nav .container {
       display: flex;
-      justify-content: flex-start;
-      gap: 15px;
-      background-color: #d3d3d3;
-      padding: 5px 15px;
-      border-radius: 15px;
-      font-size: 0.9em;
-      margin-bottom: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
     }
 
     nav a {
-      color: black;
+      color: #444;
       text-decoration: none;
-      font-weight: bold;
-      padding: 5px 10px;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #bbb;
+      color: #000;
     }
 
-    header {
-      background: url('/assets/img/background-image.avif') center/cover no-repeat;
-      height: 300px;
-      border-radius: 15px;
-      color: white;
-      position: relative;
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 210px;
+      gap: 60px;
+      align-items: start;
+      margin-bottom: 60px;
     }
 
-    .header-info {
-      background: rgba(50, 50, 50, 0.4);
-      border-radius: 10px;
-      padding: 5px;
-      display: inline-block;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: auto;
-      max-widt: 90%;
-      box-sizing: border-box;
-      color: white;
+    h1 {
+      font-size: 46px;
+      line-height: 1.05;
+      margin: 0 0 12px;
+      font-weight: 500;
     }
 
-    .header-info h1 {
-      font-size: 1.5em;
-      margin: 0;
-      font-weight: normal;
-    }
-    .header-info h2,
-    .header-info h3,
-    .header-info h4 {
-      font-size: 1em;
+    .position {
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 17px;
+      margin-bottom: 6px;
     }
 
-    .content {
-      display: flex;
-      gap: 15px;
-      align-items: stretch;
-      margin-top: 15px;
+    .institution {
+      color: #555;
+      margin-bottom: 22px;
     }
 
-    .main-content {
-      flex: 2;
-      background-color: white;
-      border-radius: 15px;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-height: 250px;
+    .fields {
+      margin: 20px 0;
     }
 
-    .sidebar {
-      flex: 1;
-      background-color: white;
-      border-radius: 15px;
-      text-align: center;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      min-height: 250px;
+    .links {
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 14px;
+      margin-top: 25px;
+    }
+
+    .links a {
+      margin-right: 18px;
+      color: #315b7d;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
     }
 
     .profile-image {
-      border-radius: 50%;
-      width: 200px;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 20px;
-      border-top: 1px solid #ccc;
+      width: 210px;
+      height: auto;
+      display: block;
     }
 
     section {
-      margin-bottom: 20px;
+      margin: 55px 0;
     }
 
-    section h2 {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: #2c3e50;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+    h2 {
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ccc;
     }
 
-    ul {
-      list-style: disc inside;
-      margin-left: 20px;
+    .paper {
+      margin-bottom: 32px;
     }
 
-    ul li {
-      margin-bottom: 10px;
+    .paper-title {
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 3px;
     }
 
-    /* Fix for CV Icon */
-    nav a[href$="cv.pdf"]::before,
-    nav a[href$="cv.pdf"]::after {
-      content: none !important;
-      display: none !important;
+    .paper-status {
+      font-style: italic;
+      color: #555;
+      font-size: 16px;
     }
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 8px;
+    .paper-links {
+      margin-top: 8px;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .paper-links a {
+      color: #315b7d;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .paper-description {
+      margin-top: 10px;
+    }
+
+    .about {
+      max-width: 760px;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      margin-top: 70px;
+      padding: 25px 0 40px;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 12px;
+      color: #777;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 0 20px;
       }
 
-      header {
-        height: 200px;
+      nav .container {
+        display: block;
       }
 
-      .content {
-        flex-direction: column;
+      .nav-name {
+        display: block;
+        margin-bottom: 12px;
       }
 
-  @media (max-width: 768px) {
-    /* Adjust header text for mobile */
-    .header-info {
-      top: 10px;
-      left: 10px;
-      padding: 5px;
-      max-width: 90%;
-      max-height: auto;
-    }
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
 
-    .header-info h1 {
-      font-size: 1.1em;
-      line-height: 0.8;
-    }
-
-    .header-info h2,
-    .header-info h3,
-    .header-info h4 {
-      font-size: 0.7em;
-      line-height: 0.5;
-    }
-
-    /* Adjust header height for mobile */
-    header {
-      height: 100px; /* Reduce height for smaller screens */
-    }
-
-    /* Adjust navigation for mobile */
-    nav {
-      flex-direction: row; /* Keep links horizontal */
-      flex-wrap: wrap; /* Allow wrapping to the next line */
-      gap: 10px;
-      padding: 10px;
-    }
-
-    nav a {
-      padding: 5px 8px; /* Reduce padding for smaller screens */
-      font-size: 0.8em; /* Reduce font size for smaller screens */
-    }
-
-    /* Adjust profile image for mobile */
-    .profile-image {
-      width: 120px;
-      max-width: 100%; /* Ensure the image doesn't overflow */
-    }
-
-      .main-content,
-      .sidebar {
-        width: 100%;
-        min-height: auto;
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
       }
 
       .profile-image {
-        width: 120px;
+        width: 160px;
+        order: -1;
       }
 
-      footer {
-        font-size: 12px;
+      h1 {
+        font-size: 38px;
       }
     }
   </style>
-
 </head>
-<link rel="icon" href="/assets/img/leeds.png" type="image/png">
 
 <body>
-  <div class="main-container">
-    <nav>
-      <a href="/index.html">About Me</a>
-      <a href="/research.html">Research</a>
-      <a href="https://drive.google.com/drive/folders/1vTU_DGYEJ5tZamAv5gb5Jj9_qCkJ6o6G?usp=drive_link" target="_blank" rel="noopener noreferrer">Data</a>
-      <a href="/assets/docs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-      <a href="/fa/">صفحه پارسی</a>
-    </nav>
 
-    <header>
-      <div class="header-info">
-        <h1>Ali Jafarzadeh</h1>
-        <h2>Finance PhD Cadidate</h2>
-        <h3>Leeds School of Business</h3>
-        <h4>University of Colorado Boulder</h4>
+<nav>
+  <div class="container">
+    <a class="nav-name" href="/">Ali Jafarzadeh</a>
+
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="/assets/docs/cv.pdf" target="_blank">CV</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  <div class="hero">
+
+    <div>
+      <h1>Ali Jafarzadeh</h1>
+
+      <div class="position">
+        PhD Candidate in Finance
       </div>
-    </header>
 
-    <div class="content">
-      <!-- Main Content -->
-      <div class="main-content">
-  <p>I am a PhD candidate in Finance at the Leeds School of Business, University of Colorado Boulder. My research focuses on Innovation and Growth, infomration economics, and machine learning applications in finance.</p>
+      <div class="institution">
+        Leeds School of Business<br>
+        University of Colorado Boulder
+      </div>
 
-  <p>Before joining CU Boulder, I earned an M.S. in Economics with a minor in Mathematics from Tarbiat Modares University and a B.S. in Mechanical Engineering (Food Machinery) from the University of Tehran.</p>
+      <div class="fields">
+        <strong>Research interests:</strong>
+        Corporate Finance, Innovation, Industrial Organization
+      </div>
 
-  <p>Outside academia, I serve as President of the Iranian Student Organization at CU Boulder, working to promote Iranian culture and arts. I played competitive volleyball as an undergraduate, practice <em>Avaz</em> (traditional Persian vocal music), and play the <em>Ney</em>. I also enjoy nature, wildlife, and time with family and friends.</p>
-</div>
+      <p>
+        My research studies how firms respond to technological change and
+        information frictions, with a particular focus on innovation,
+        corporate boundaries, and capital allocation.
+      </p>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <img src="/assets/img/ali2.jpg" alt="Ali Jafarzadeh" class="profile-image">
-        <h3>Contact</h3>
-        <p>
-          University of Colorado Boulder<br>
-          Leeds School of Business<br>
-          Boulder, CO, 80309<br>
-          <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a><br>
-          <a href="https://github.com/ali-jafarzadeh" target="_blank" rel="noopener noreferrer">github.com/ali-jafarzadeh</a><br>
-          <a href="https://www.linkedin.com/in/ali-jafarzadeh-59336b121/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a><br>
-          <a href="https://ali-jafarzadeh.com/research.html">View research projects</a>
-        </p>
+      <div class="links">
+        <a href="mailto:ali.jafarzadeh@colorado.edu">Email</a>
+        <a href="/assets/docs/cv.pdf" target="_blank">CV</a>
+        <a href="https://github.com/ali-jafarzadeh" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ali-jafarzadeh-59336b121/"
+           target="_blank">LinkedIn</a>
       </div>
     </div>
 
-    <footer>
-      <p>&copy; <script>document.write(new Date().getFullYear());</script> Ali Jafarzadeh | University of Colorado Boulder| <a href="https://ali-jafarzadeh.com/research.html">Research Projects</a> | Contact: <a href="mailto:ali.jafarzadeh@colorado.edu">ali.jafarzadeh@colorado.edu</a></p>
-    </footer>
+    <img
+      src="/assets/img/ali2.jpg"
+      alt="Ali Jafarzadeh"
+      class="profile-image">
   </div>
+
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="paper">
+      <div class="paper-title">
+        Patent Trajectories and M&A Choices
+      </div>
+
+      <div class="paper-status">
+        Working Paper
+      </div>
+
+      <div class="paper-description">
+        [Put a concise two- or three-sentence description of the paper here.]
+      </div>
+
+      <div class="paper-links">
+        <a href="#">Paper</a>
+        <a href="#">Slides</a>
+      </div>
+    </div>
+
+
+    <div class="paper">
+      <div class="paper-title">
+        [Second Project Title]
+      </div>
+
+      <div class="paper-status">
+        Work in Progress
+      </div>
+
+      <div class="paper-description">
+        [Short description.]
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+
+    <p>
+      Teaching information can be added here as you approach the job market.
+    </p>
+  </section>
+
+
+  <section id="about" class="about">
+    <h2>About</h2>
+
+    <p>
+      Before joining CU Boulder, I earned an M.S. in Economics with a minor
+      in Mathematics from Tarbiat Modares University and a B.S. in Mechanical
+      Engineering from the University of Tehran.
+    </p>
+
+    <p>
+      Outside academia, I enjoy volleyball, the outdoors, Persian music,
+      history, and spending time with family and friends.
+    </p>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    © <script>document.write(new Date().getFullYear());</script>
+    Ali Jafarzadeh · University of Colorado Boulder
+  </div>
+</footer>
+
 </body>
 </html>
