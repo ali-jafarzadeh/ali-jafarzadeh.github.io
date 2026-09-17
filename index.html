@@ -4,48 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ali Jafarzadeh | Finance PhD Candidate | CU Boulder</title>
+  <title>Ali Jafarzadeh | Finance PhD Candidate at CU Boulder</title>
 
   <meta name="description"
         content="Ali Jafarzadeh is a Finance PhD Candidate at the Leeds School of Business, University of Colorado Boulder. His research focuses on corporate finance, innovation, industrial organization, mergers and acquisitions, firm disclosure, and access to finance.">
 
   <meta name="keywords"
-        content="Ali Jafarzadeh, Finance PhD, University of Colorado Boulder, Leeds School of Business, corporate finance, innovation, mergers and acquisitions, industrial organization, firm disclosure, access to finance">
+        content="Ali Jafarzadeh, Finance PhD, CU Boulder, Leeds School of Business, corporate finance, innovation, industrial organization, mergers and acquisitions, firm disclosure, access to finance">
 
   <meta name="author" content="Ali Jafarzadeh">
+  <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://ali-jafarzadeh.com/">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="/assets/img/mehr2.jpeg">
-  <link rel="shortcut icon" href="/assets/img/mehr2.jpeg">
+  <!-- FAVICON / GOOGLE SEARCH ICON -->
+  <link rel="icon" type="image/jpeg" href="/assets/img/mehr.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="/assets/img/mehr.jpeg">
 
-  <!-- Open Graph -->
+  <!-- OPEN GRAPH -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ali Jafarzadeh | Finance PhD Candidate">
   <meta property="og:description"
-        content="Finance PhD Candidate at the Leeds School of Business, University of Colorado Boulder. Research in corporate finance, innovation, industrial organization, and information economics.">
+        content="Finance PhD Candidate at the Leeds School of Business, University of Colorado Boulder. Research in corporate finance, innovation, and industrial organization.">
   <meta property="og:url" content="https://ali-jafarzadeh.com/">
   <meta property="og:image"
         content="https://ali-jafarzadeh.com/assets/img/ali2.JPG">
+  <meta property="og:site_name" content="Ali Jafarzadeh">
 
-  <!-- Twitter / X -->
+  <!-- SOCIAL PREVIEW -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title"
-        content="Ali Jafarzadeh | Finance PhD Candidate">
+  <meta name="twitter:title" content="Ali Jafarzadeh | Finance PhD Candidate">
   <meta name="twitter:description"
-        content="Finance PhD Candidate at the University of Colorado Boulder researching corporate finance, innovation, and industrial organization.">
+        content="Research in corporate finance, innovation, and industrial organization.">
   <meta name="twitter:image"
         content="https://ali-jafarzadeh.com/assets/img/ali2.JPG">
 
-  <!-- Fonts -->
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-  <!-- Structured Data -->
+  <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,6 +55,7 @@
     "url": "https://ali-jafarzadeh.com/",
     "image": "https://ali-jafarzadeh.com/assets/img/ali2.JPG",
     "jobTitle": "Finance PhD Candidate",
+    "email": "mailto:ali.jafarzadeh@colorado.edu",
     "affiliation": {
       "@type": "CollegeOrUniversity",
       "name": "University of Colorado Boulder"
@@ -78,21 +80,25 @@
   </script>
 
   <style>
+
     :root {
-      --background: #f7f7f5;
-      --surface: #ffffff;
-      --text: #252525;
-      --muted: #6d6965;
+      /* Mehr-inspired palette */
+      --green: #30483A;
+      --green-dark: #24382D;
+      --green-soft: #E7ECE7;
 
-      /* Persian-inspired palette */
-      --persian-blue: #16475a;
-      --deep-blue: #103746;
-      --pomegranate: #8f2231;
-      --pomegranate-dark: #6f1723;
-      --turquoise: #3e8581;
-      --saffron: #c78131;
+      --red: #B65332;
+      --red-dark: #914026;
 
-      --border: #ddd9d4;
+      --gold: #D0A64F;
+      --gold-soft: #E2CC92;
+
+      --ivory: #F5F1E7;
+      --paper: #FFFDF8;
+
+      --text: #282724;
+      --muted: #706C65;
+      --border: #DED9CF;
     }
 
     * {
@@ -105,7 +111,7 @@
 
     body {
       margin: 0;
-      background: var(--background);
+      background: var(--ivory);
       color: var(--text);
       font-family: "Manrope", Arial, sans-serif;
       font-size: 16px;
@@ -117,20 +123,17 @@
       margin: 0 auto;
     }
 
-    a {
-      color: inherit;
-    }
-
-    /* =========================
+    /* =================================
        NAVIGATION
-       ========================= */
+       ================================= */
 
     nav {
-      background: var(--deep-blue);
-      border-bottom: 4px solid var(--pomegranate);
       position: sticky;
       top: 0;
       z-index: 100;
+      background: var(--green-dark);
+      border-bottom: 3px solid var(--red);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     }
 
     .nav-inner {
@@ -138,34 +141,35 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 30px;
+      gap: 32px;
     }
 
     .nav-name {
+      color: #fff;
+      text-decoration: none;
       font-family: "Libre Baskerville", Georgia, serif;
       font-size: 19px;
       font-weight: 700;
-      color: #ffffff;
-      text-decoration: none;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 31px;
+      gap: 32px;
       flex-wrap: wrap;
     }
 
     .nav-links a {
+      color: rgba(255,255,255,0.92);
       text-decoration: none;
       font-size: 15px;
       font-weight: 700;
-      color: rgba(255,255,255,0.90);
-      transition: color 0.2s ease;
+      letter-spacing: 0.01em;
+      transition: color .2s ease;
     }
 
     .nav-links a:hover {
-      color: #d8aaa9;
+      color: var(--gold-soft);
     }
 
     .nav-links .parsi {
@@ -175,13 +179,21 @@
       direction: rtl;
     }
 
-    /* =========================
+    /* =================================
        HERO
-       ========================= */
+       ================================= */
+
+    .hero-wrap {
+      background:
+        radial-gradient(circle at 88% 20%,
+          rgba(208,166,79,0.11),
+          transparent 25%),
+        var(--ivory);
+    }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
+      grid-template-columns: minmax(0,1fr) 340px;
       gap: 78px;
       align-items: center;
       padding: 78px 0 84px;
@@ -194,94 +206,124 @@
     }
 
     h1 {
-      margin: 0 0 17px;
-      color: var(--deep-blue);
-      font-size: 50px;
+      color: var(--green-dark);
+      font-size: 52px;
       line-height: 1.08;
+      margin: 0 0 17px;
+    }
+
+    .name-rule {
+      width: 56px;
+      height: 4px;
+      background: var(--red);
+      margin: 0 0 22px;
+      border-radius: 4px;
     }
 
     .position {
       font-size: 21px;
       font-weight: 600;
       color: var(--text);
-      margin-bottom: 3px;
     }
 
     .institution {
+      margin-top: 3px;
       color: var(--muted);
       font-size: 16px;
     }
 
     .research-interests {
-      margin-top: 27px;
-      color: var(--pomegranate);
-      font-family: "Libre Baskerville", Georgia, serif;
+      margin-top: 28px;
       font-size: 15px;
       line-height: 1.8;
+      color: var(--red-dark);
     }
 
     .research-interests .label {
-      font-family: "Manrope", sans-serif;
-      color: var(--deep-blue);
-      font-size: 13px;
+      color: var(--green-dark);
       font-weight: 700;
-      margin-right: 7px;
+      margin-right: 8px;
     }
 
     .hero-links {
       display: flex;
-      gap: 22px;
+      gap: 23px;
+      margin-top: 28px;
       flex-wrap: wrap;
-      margin-top: 29px;
     }
 
     .hero-links a {
-      color: var(--persian-blue);
+      color: var(--green-dark);
+      text-decoration: none;
       font-size: 14px;
       font-weight: 700;
-      text-decoration: none;
       padding-bottom: 2px;
-      border-bottom: 2px solid var(--turquoise);
-      transition: all 0.2s ease;
+      border-bottom: 2px solid var(--gold);
+      transition: .2s ease;
     }
 
     .hero-links a:hover {
-      color: var(--pomegranate);
-      border-color: var(--pomegranate);
+      color: var(--red);
+      border-color: var(--red);
+    }
+
+    .photo-wrap {
+      justify-self: end;
+      max-width: 340px;
     }
 
     .profile-photo {
-      width: 330px;
-      max-width: 100%;
+      width: 100%;
       height: auto;
       display: block;
-      justify-self: end;
-      border-radius: 8px;
+      border-radius: 12px;
+      box-shadow:
+        0 14px 30px rgba(48,72,58,0.14),
+        0 3px 7px rgba(0,0,0,0.08);
     }
 
-    /* =========================
+    /* =================================
        RESEARCH
-       ========================= */
+       ================================= */
 
     section {
       scroll-margin-top: 95px;
     }
 
     .research-section {
-      background: var(--surface);
-      padding: 70px 0 76px;
+      background: var(--paper);
+      padding: 72px 0 78px;
       border-top: 1px solid var(--border);
     }
 
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background:
+        linear-gradient(
+          to right,
+          var(--gold),
+          transparent
+        );
+    }
+
     h2 {
-      color: var(--deep-blue);
-      font-size: 28px;
-      margin: 0 0 38px;
+      color: var(--green-dark);
+      font-size: 29px;
+      margin: 0;
     }
 
     .research-group {
-      max-width: 880px;
-      margin-bottom: 52px;
+      max-width: 890px;
+      margin-bottom: 54px;
     }
 
     .research-group:last-child {
@@ -290,57 +332,45 @@
 
     .group-title {
       display: inline-block;
-      color: var(--pomegranate);
+      color: var(--red);
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.13em;
       text-transform: uppercase;
-      margin-bottom: 22px;
-      padding-bottom: 4px;
-      border-bottom: 2px solid var(--saffron);
+      letter-spacing: .13em;
+      margin-bottom: 21px;
     }
 
     .paper {
-      position: relative;
-      margin-bottom: 34px;
+      margin-bottom: 35px;
       padding-left: 20px;
+      border-left: 3px solid var(--green-soft);
     }
 
     .paper:last-child {
       margin-bottom: 0;
     }
 
-    .paper::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      left: 0;
-      width: 4px;
-      height: calc(100% - 8px);
-      background: var(--turquoise);
-      border-radius: 4px;
-    }
-
-    .research-group:first-of-type .paper::before {
-      background: var(--pomegranate);
+    .working-paper {
+      border-left-color: var(--red);
     }
 
     .paper-title {
       font-family: "Libre Baskerville", Georgia, serif;
+      color: var(--green-dark);
       font-size: 20px;
       font-weight: 700;
       line-height: 1.45;
       margin-bottom: 7px;
-      color: var(--deep-blue);
     }
 
     .paper-title a {
-      color: var(--deep-blue);
+      color: var(--green-dark);
       text-decoration: none;
+      transition: color .2s ease;
     }
 
     .paper-title a:hover {
-      color: var(--pomegranate);
+      color: var(--red);
     }
 
     .paper-note {
@@ -350,58 +380,59 @@
     }
 
     .paper-summary {
-      color: #4b4744;
       max-width: 810px;
       margin: 0;
+      color: #4D4944;
     }
 
     .conference {
-      margin-top: 11px;
-      color: var(--pomegranate-dark);
+      display: inline-block;
+      margin-top: 13px;
+      color: var(--red-dark);
       font-size: 14px;
       font-weight: 600;
     }
 
-    /* =========================
+    /* =================================
        ABOUT
-       ========================= */
+       ================================= */
 
     .about-section {
-      padding: 68px 0 74px;
+      padding: 68px 0 75px;
       background:
         linear-gradient(
-          90deg,
-          rgba(62,133,129,0.05),
-          rgba(143,34,49,0.035)
+          135deg,
+          rgba(48,72,58,0.04),
+          rgba(182,83,50,0.035)
         );
     }
 
     .about-text {
-      max-width: 830px;
+      max-width: 835px;
     }
 
     .about-text p {
       margin: 0;
-      color: #413d3a;
       font-size: 16px;
-      line-height: 1.8;
+      line-height: 1.82;
+      color: #403D39;
     }
 
-    /* =========================
+    /* =================================
        FOOTER
-       ========================= */
+       ================================= */
 
     footer {
-      background: var(--deep-blue);
-      border-top: 4px solid var(--turquoise);
-      color: rgba(255,255,255,0.72);
+      background: var(--green-dark);
+      border-top: 4px solid var(--gold);
+      color: rgba(255,255,255,0.70);
       padding: 25px 0 29px;
       font-size: 12px;
     }
 
-    /* =========================
+    /* =================================
        MOBILE
-       ========================= */
+       ================================= */
 
     @media (max-width: 760px) {
 
@@ -418,31 +449,31 @@
       }
 
       .nav-links {
-        gap: 17px;
+        gap: 18px;
       }
 
       .hero {
         grid-template-columns: 1fr;
-        gap: 36px;
-        padding: 50px 0 57px;
+        gap: 37px;
+        padding: 50px 0 58px;
       }
 
       h1 {
-        font-size: 39px;
+        font-size: 40px;
       }
 
-      .profile-photo {
-        width: 230px;
+      .photo-wrap {
+        width: 240px;
         justify-self: start;
         order: -1;
       }
 
       .research-section {
-        padding: 53px 0 60px;
+        padding: 54px 0 60px;
       }
 
       .about-section {
-        padding: 53px 0 58px;
+        padding: 54px 0 60px;
       }
     }
 
@@ -451,102 +482,98 @@
 
 <body>
 
-  <!-- =========================
-       NAVIGATION
-       ========================= -->
+<nav>
+  <div class="container nav-inner">
 
-  <nav>
+    <a href="#top" class="nav-name">
+      Ali Jafarzadeh
+    </a>
 
-    <div class="container nav-inner">
+    <div class="nav-links">
 
-      <a href="#top" class="nav-name">
-        Ali Jafarzadeh
+      <a href="#research">
+        Research
       </a>
 
-      <div class="nav-links">
+      <a href="/assets/docs/cv.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        CV
+      </a>
 
-        <a href="#research">
-          Research
-        </a>
+      <a href="#about">
+        About Me
+      </a>
 
-        <a href="/assets/docs/cv.pdf"
-           target="_blank"
-           rel="noopener noreferrer">
-          CV
-        </a>
-
-        <a href="#about">
-          About Me
-        </a>
-
-        <a href="/fa/"
-           class="parsi"
-           lang="fa"
-           dir="rtl">
-          پارسی
-        </a>
-
-      </div>
+      <a href="/fa/"
+         class="parsi"
+         lang="fa"
+         dir="rtl">
+        پارسی
+      </a>
 
     </div>
 
-  </nav>
+  </div>
+</nav>
 
 
-  <main id="top">
+<main id="top">
 
-    <!-- =========================
-         HERO
-         ========================= -->
+  <!-- HERO -->
 
-    <div class="container">
+  <div class="hero-wrap">
 
-      <div class="hero">
+    <div class="container hero">
 
-        <div>
+      <div>
 
-          <h1>
-            Ali Jafarzadeh
-          </h1>
+        <h1>
+          Ali Jafarzadeh
+        </h1>
 
-          <div class="position">
-            PhD Candidate in Finance
-          </div>
+        <div class="name-rule"></div>
 
-          <div class="institution">
-            Leeds School of Business · University of Colorado Boulder
-          </div>
+        <div class="position">
+          PhD Candidate in Finance
+        </div>
 
-          <div class="research-interests">
+        <div class="institution">
+          Leeds School of Business · University of Colorado Boulder
+        </div>
 
-            <span class="label">
-              Research Interests
-            </span>
+        <div class="research-interests">
 
-            Corporate Finance · Innovation · Industrial Organization
+          <span class="label">
+            Research Interests:
+          </span>
 
-          </div>
-
-          <div class="hero-links">
-
-            <a href="#research">
-              Research
-            </a>
-
-            <a href="/assets/docs/cv.pdf"
-               target="_blank"
-               rel="noopener noreferrer">
-              CV
-            </a>
-
-            <a href="mailto:ali.jafarzadeh@colorado.edu">
-              Email
-            </a>
-
-          </div>
+          Corporate Finance · Innovation · Industrial Organization
 
         </div>
 
+        <div class="hero-links">
+
+          <a href="#research">
+            Research
+          </a>
+
+          <a href="/assets/docs/cv.pdf"
+             target="_blank"
+             rel="noopener noreferrer">
+            CV
+          </a>
+
+          <a href="mailto:ali.jafarzadeh@colorado.edu">
+            Email
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="photo-wrap">
 
         <img src="/assets/img/ali2.JPG"
              alt="Ali Jafarzadeh, Finance PhD Candidate at the University of Colorado Boulder"
@@ -556,170 +583,162 @@
 
     </div>
 
-
-    <!-- =========================
-         RESEARCH
-         ========================= -->
-
-    <section id="research"
-             class="research-section">
-
-      <div class="container">
-
-        <h2>
-          Research
-        </h2>
+  </div>
 
 
-        <!-- WORKING PAPER -->
+  <!-- RESEARCH -->
 
-        <div class="research-group">
+  <section id="research"
+           class="research-section">
 
-          <div class="group-title">
-            Working Paper
-          </div>
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>Research</h2>
+      </div>
 
 
-          <div class="paper">
+      <!-- WORKING PAPER -->
 
-            <div class="paper-title">
+      <div class="research-group">
 
-              <a href="/assets/docs/Innovation-Dynamics-and-Acquisition-Decisions.pdf"
-                 target="_blank"
-                 rel="noopener noreferrer">
-
-                Innovation Dynamics and Acquisition Decisions
-
-              </a>
-
-            </div>
-
-            <div class="paper-note">
-              Second-Year Paper
-            </div>
-
-            <p class="paper-summary">
-
-              Technological similarity helps determine a target's value to an
-              acquirer, but this relationship changes as firms innovate.
-              Using semantic embeddings of patent portfolios, I show that both
-              current technological distance and the history of technological
-              convergence help explain acquisition choices among otherwise
-              similar targets.
-
-            </p>
-
-            <div class="conference">
-              Scheduled for presentation: FMA 2026 · SFA 2026
-            </div>
-
-          </div>
-
+        <div class="group-title">
+          Working Paper
         </div>
 
 
-        <!-- WORK IN PROGRESS -->
+        <div class="paper working-paper">
 
-        <div class="research-group">
+          <div class="paper-title">
 
-          <div class="group-title">
-            Work in Progress
-          </div>
+            <a href="/assets/docs/Innovation-Dynamics-and-Acquisition-Decisions.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
 
+              Innovation Dynamics and Acquisition Decisions
 
-          <div class="paper">
-
-            <div class="paper-title">
-              The Evolution of Accounting Disclosure 
-            </div>
-
-            <div class="paper-note">
-              with Diego Garcia
-            </div>
-
-            <p class="paper-summary">
-
-              Using Moody's Industrial Manuals from 1920--1969, we study
-              which accounting entries firms disclosed, how disclosure
-              differed across firms, and how reporting practices changed
-              over time.
-
-            </p>
+            </a>
 
           </div>
 
+          <div class="paper-note">
+            Second-Year Paper
+          </div>
 
-          <div class="paper">
+          <p class="paper-summary">
 
-            <div class="paper-title">
-              Access to Finance and Local Economic Growth after World War II
-            </div>
+            Technological similarity helps determine a target's value to an
+            acquirer, but this relationship changes as firms innovate. Using
+            semantic embeddings of patent portfolios, I show that both current
+            technological distance and the history of technological convergence
+            help explain acquisition choices among otherwise similar targets.
 
-            <p class="paper-summary">
+          </p>
 
-              Using historical Moody's Government Manuals, this project
-              studies how differences in local access to finance shaped
-              economic growth in the postwar United States.
-
-            </p>
-
+          <div class="conference">
+            Scheduled for presentation: FMA 2026 · SFA 2026
           </div>
 
         </div>
 
       </div>
 
-    </section>
+
+      <!-- WORK IN PROGRESS -->
+
+      <div class="research-group">
+
+        <div class="group-title">
+          Work in Progress
+        </div>
 
 
-    <!-- =========================
-         ABOUT
-         ========================= -->
+        <div class="paper">
 
-    <section id="about"
-             class="about-section">
+          <div class="paper-title">
+            The Evolution of Firm Disclosure
+          </div>
 
-      <div class="container">
+          <div class="paper-note">
+            with Diego Garcia
+          </div>
 
-        <h2>
-          About Me
-        </h2>
+          <p class="paper-summary">
 
-        <div class="about-text">
+            Using Moody's Industrial Manuals from 1920--1969, we study which
+            accounting entries firms disclosed, how disclosure differed across
+            firms, and how reporting practices evolved over time.
 
-          <p>
-            Outside academia, I enjoy playing volleyball, hiking and exploring
-            the outdoors, and being with family and friends. I’m curious about
-            the forces that shape both individual lives and societies, from
-            values, character, ambition, and hardship to institutions,
-            opportunity, social failure, recovery, and development. I especially
-            enjoy conversations that let me hear how other people understand
-            these issues.
+          </p>
+
+        </div>
+
+
+        <div class="paper">
+
+          <div class="paper-title">
+            Access to Finance and Local Economic Growth after World War II
+          </div>
+
+          <p class="paper-summary">
+
+            Using Moody's Government Manuals, this project studies how
+            differences in local access to finance shaped economic growth
+            in the postwar United States.
+
           </p>
 
         </div>
 
       </div>
 
-    </section>
+    </div>
 
-  </main>
+  </section>
 
 
-  <!-- =========================
-       FOOTER
-       ========================= -->
+  <!-- ABOUT -->
 
-  <footer>
+  <section id="about"
+           class="about-section">
 
     <div class="container">
 
-      © <script>document.write(new Date().getFullYear());</script>
-      Ali Jafarzadeh · University of Colorado Boulder
+      <div class="section-heading">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-text">
+
+        <p>
+          Outside academia, I enjoy playing volleyball, hiking and exploring
+          the outdoors, and being with family and friends. I’m curious about
+          the forces that shape both individual lives and societies, from
+          values, character, ambition, and hardship to institutions,
+          opportunity, social failure, recovery, and development. I especially
+          enjoy conversations that let me hear how other people understand
+          these issues.
+        </p>
+
+      </div>
 
     </div>
 
-  </footer>
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    © <script>document.write(new Date().getFullYear());</script>
+    Ali Jafarzadeh · University of Colorado Boulder
+
+  </div>
+
+</footer>
 
 </body>
 </html>
