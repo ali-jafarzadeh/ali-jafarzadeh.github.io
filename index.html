@@ -17,11 +17,11 @@
 
   <link rel="canonical" href="https://ali-jafarzadeh.com/">
 
-  <!-- FAVICON / GOOGLE SEARCH ICON -->
-  <link rel="icon" type="image/jpeg" href="/assets/img/mehr.jpeg">
-  <link rel="shortcut icon" type="image/jpeg" href="/assets/img/mehr.jpeg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="/assets/img/mehr2.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="/assets/img/mehr2.jpeg">
 
-  <!-- OPEN GRAPH -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ali Jafarzadeh | Finance PhD Candidate">
   <meta property="og:description"
@@ -31,22 +31,27 @@
         content="https://ali-jafarzadeh.com/assets/img/ali2.JPG">
   <meta property="og:site_name" content="Ali Jafarzadeh">
 
-  <!-- SOCIAL PREVIEW -->
+  <!-- Social preview -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ali Jafarzadeh | Finance PhD Candidate">
+  <meta name="twitter:title"
+        content="Ali Jafarzadeh | Finance PhD Candidate">
   <meta name="twitter:description"
         content="Research in corporate finance, innovation, and industrial organization.">
   <meta name="twitter:image"
         content="https://ali-jafarzadeh.com/assets/img/ali2.JPG">
 
-  <!-- FONTS -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-  <!-- STRUCTURED DATA -->
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,7 +87,6 @@
   <style>
 
     :root {
-      /* Mehr-inspired palette */
       --green: #30483A;
       --green-dark: #24382D;
       --green-soft: #E7ECE7;
@@ -123,9 +127,7 @@
       margin: 0 auto;
     }
 
-    /* =================================
-       NAVIGATION
-       ================================= */
+    /* NAVIGATION */
 
     nav {
       position: sticky;
@@ -164,7 +166,6 @@
       text-decoration: none;
       font-size: 15px;
       font-weight: 700;
-      letter-spacing: 0.01em;
       transition: color .2s ease;
     }
 
@@ -179,14 +180,12 @@
       direction: rtl;
     }
 
-    /* =================================
-       HERO
-       ================================= */
+    /* HERO */
 
     .hero-wrap {
       background:
         radial-gradient(circle at 88% 20%,
-          rgba(208,166,79,0.11),
+          rgba(208,166,79,0.10),
           transparent 25%),
         var(--ivory);
     }
@@ -267,24 +266,47 @@
       border-color: var(--red);
     }
 
-    .photo-wrap {
+    /* PHOTO + PROFILE ICONS */
+
+    .photo-column {
       justify-self: end;
-      max-width: 340px;
+      width: 340px;
+      max-width: 100%;
     }
 
     .profile-photo {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 12px;
+      border-radius: 10px;
       box-shadow:
-        0 14px 30px rgba(48,72,58,0.14),
-        0 3px 7px rgba(0,0,0,0.08);
+        0 14px 30px rgba(48,72,58,0.13),
+        0 3px 7px rgba(0,0,0,0.07);
     }
 
-    /* =================================
-       RESEARCH
-       ================================= */
+    .profile-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 21px;
+      margin-top: 17px;
+    }
+
+    .profile-links a {
+      color: var(--green-dark);
+      font-size: 20px;
+      text-decoration: none;
+      transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .profile-links a:hover {
+      color: var(--red);
+      transform: translateY(-2px);
+    }
+
+    /* RESEARCH */
 
     section {
       scroll-margin-top: 95px;
@@ -393,9 +415,7 @@
       font-weight: 600;
     }
 
-    /* =================================
-       ABOUT
-       ================================= */
+    /* ABOUT */
 
     .about-section {
       padding: 68px 0 75px;
@@ -418,9 +438,7 @@
       color: #403D39;
     }
 
-    /* =================================
-       FOOTER
-       ================================= */
+    /* FOOTER */
 
     footer {
       background: var(--green-dark);
@@ -430,9 +448,7 @@
       font-size: 12px;
     }
 
-    /* =================================
-       MOBILE
-       ================================= */
+    /* MOBILE */
 
     @media (max-width: 760px) {
 
@@ -462,7 +478,7 @@
         font-size: 40px;
       }
 
-      .photo-wrap {
+      .photo-column {
         width: 240px;
         justify-self: start;
         order: -1;
@@ -573,11 +589,39 @@
       </div>
 
 
-      <div class="photo-wrap">
+      <div class="photo-column">
 
         <img src="/assets/img/ali2.JPG"
              alt="Ali Jafarzadeh, Finance PhD Candidate at the University of Colorado Boulder"
              class="profile-photo">
+
+        <div class="profile-links">
+
+          <a href="YOUR_GOOGLE_SCHOLAR_URL"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Google Scholar"
+             title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </a>
+
+          <a href="https://github.com/ali-jafarzadeh"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="GitHub"
+             title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ali-jafarzadeh-59336b121/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="LinkedIn"
+             title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+        </div>
 
       </div>
 
